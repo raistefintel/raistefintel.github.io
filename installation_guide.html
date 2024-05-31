@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" data-content_root="./">
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.19: https://docutils.sourceforge.io/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Installation Guide &mdash; Intel Distribution for Python 0.1 documentation</title>
+      <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=80d5e7a1" />
+      <link rel="stylesheet" type="text/css" href="_static/css/theme.css?v=19f00094" />
+
+  
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script src="_static/jquery.js?v=5d32c60e"></script>
+        <script src="_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+        <script src="_static/documentation_options.js?v=2709fde1"></script>
+        <script src="_static/doctools.js?v=9a2dae69"></script>
+        <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Performance Tuning Guide" href="tuning_guide.html" />
+    <link rel="prev" title="Releases" href="releases.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="index.html" class="icon icon-home">
+            Intel Distribution for Python
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="features.html">Features</a></li>
+<li class="toctree-l1"><a class="reference internal" href="releases.html">Releases</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Installation Guide</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#install-via-intel-ai-analytics-toolkit">Install via Intel® AI Analytics Toolkit</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#environment-setup">Environment Setup</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#install-as-a-single-component">Install as a Single Component</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#install-via-anaconda">Install via Anaconda</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#install-using-yum-repository">Install Using YUM Repository</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#install-using-apt-repository">Install Using APT Repository</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#sanity-check">Sanity Check</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#sample-code">Sample Code</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#build-your-own-project">Build Your Own Project</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#references">References</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#support">Support</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#notices-and-disclaimers">Notices and Disclaimers</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#product-and-performance-information">Product and Performance Information</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="tuning_guide.html">Performance Tuning Guide</a></li>
+<li class="toctree-l1"><a class="reference internal" href="performance.html">Performance</a></li>
+<li class="toctree-l1"><a class="reference internal" href="contribution.html">Contribution</a></li>
+<li class="toctree-l1"><a class="reference internal" href="license.html">License</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">Intel Distribution for Python</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="index.html" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active">Installation Guide</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="_sources/installation_guide.md.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="installation-guide">
+<h1>Installation Guide<a class="headerlink" href="#installation-guide" title="Link to this heading"></a></h1>
+<section id="install-via-intel-ai-analytics-toolkit">
+<h2>Install via Intel® AI Analytics Toolkit<a class="headerlink" href="#install-via-intel-ai-analytics-toolkit" title="Link to this heading"></a></h2>
+<p>The Intel® AI Analytics Toolkit includes the Intel Distribution for Python. So the Intel Distribution for Python is ready for use once the Intel AI Analytics Toolkit installation is finished and the environment activation is run.</p>
+<section id="environment-setup">
+<h3>Environment Setup<a class="headerlink" href="#environment-setup" title="Link to this heading"></a></h3>
+<ol class="arabic simple">
+<li><p><strong>Install the Intel AI Analytics Toolkit.</strong> <br>
+To download the Intel Distribution for Python* from the Intel AI Analytics Toolkit, visit <a class="reference external" href="https://www.intel.com/content/www/us/en/developer/tools/oneapi/ai-analytics-toolkit-download.html">here</a> and choose the installation method of your choice. Find detailed information about the toolkit <a class="reference external" href="https://www.intel.com/content/www/us/en/developer/tools/oneapi/ai-analytics-toolkit.html#gs.48ofa2">here</a>.</p></li>
+<li><p><strong>Set up Intel the AI Analytics Toolkit environment.</strong> <br>
+Source the setvars script located in the root of your oneAPI installation.</p></li>
+</ol>
+<ul>
+<li><p>Linux*:</p>
+<ul class="simple">
+<li><p>Sudo:</p></li>
+</ul>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">.</span> <span class="o">/</span><span class="n">opt</span><span class="o">/</span><span class="n">intel</span><span class="o">/</span><span class="n">oneapi</span><span class="o">/</span><span class="n">setvars</span><span class="o">.</span><span class="n">sh</span>
+</pre></div>
+</div>
+<ul class="simple">
+<li><p>User:</p></li>
+</ul>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">.</span> <span class="o">~/</span><span class="n">intel</span><span class="o">/</span><span class="n">oneapi</span><span class="o">/</span><span class="n">setvars</span><span class="o">.</span><span class="n">sh</span>
+</pre></div>
+</div>
+</li>
+<li><p>Windows:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">C</span><span class="p">:</span>\<span class="n">Program</span> <span class="n">Files</span><span class="p">(</span><span class="n">x86</span><span class="p">)</span>\<span class="n">Intel</span>\<span class="n">oneAPI</span>\<span class="n">setvars</span><span class="o">.</span><span class="n">bat</span>
+</pre></div>
+</div>
+</li>
+</ul>
+<p>For more information on environment variables, check out how to <a class="reference external" href="https://www.intel.com/content/www/us/en/docs/oneapi/programming-guide/2023-0/use-the-setvars-script-with-linux-or-macos.html">use the setvars Script for Linux or macOS</a>, or <a class="reference external" href="https://www.intel.com/content/www/us/en/docs/oneapi/programming-guide/2023-0/use-the-setvars-script-with-windows.html">Windows</a>.</p>
+<ol class="arabic simple" start="3">
+<li><p><strong>Activate the conda environment.</strong></p></li>
+</ol>
+<ul>
+<li><p>Linux*:</p>
+<ul>
+<li><p>If you have root access to your oneAPI installation path or if you use the Intel® DevCloud, Intel Python environment will be activated by default. However, if you have activated another environment, you can return with the following command:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">source</span> <span class="n">activate</span> <span class="n">base</span>
+</pre></div>
+</div>
+</li>
+<li><p>If you do not have root access to your oneAPI installation path: <br>
+By default, the Intel AI Analytics Toolkit is installed in the /opt/intel/oneapi folder, which requires root privileges to manage it. If you would like to bypass using root access to manage your conda environment, then you can clone your desired conda environment using the following command:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">conda</span> <span class="n">create</span> <span class="o">--</span><span class="n">name</span> <span class="n">usr_intelpython</span> <span class="o">--</span><span class="n">clone</span> <span class="n">base</span>
+</pre></div>
+</div>
+<p>Then activate your conda environment with the following command:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">source</span> <span class="n">activate</span> <span class="n">usr_intelpython</span>
+</pre></div>
+</div>
+</li>
+</ul>
+</li>
+<li><p>Windows:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">C</span><span class="p">:</span>\<span class="n">ProgramFiles</span><span class="p">(</span><span class="n">x86</span><span class="p">)</span>\<span class="n">Intel</span>\<span class="n">oneAPI</span>\<span class="n">intelpython</span>\<span class="n">python3</span><span class="o">.</span><span class="n">x</span>\<span class="n">Scripts</span>\<span class="n">activate</span>
+</pre></div>
+</div>
+</li>
+</ul>
+</section>
+</section>
+<section id="install-as-a-single-component">
+<h2>Install as a Single Component<a class="headerlink" href="#install-as-a-single-component" title="Link to this heading"></a></h2>
+<p>Achieve fast math-intensive workload performance without code changes for data science and machine learning problems. This component is part of the Intel® AI Analytics Toolkit. <br></p>
+<p><a class="reference external" href="https://software.seek.intel.com/developer-products-sign-up?dwnld=Intel%C2%AE%20Distribution%20for%20Python%2A"><img alt="sign-up-for-updates" src="https://img.shields.io/badge/Sign_up_for_updates-blue" /></a></p>
+<p>Intel® Distribution for Python (version 2023.2.0) has been updated to include functional and security updates. Users should update to the <a class="reference external" href="https://www.intel.com/content/www/us/en/developer/articles/tool/oneapi-standalone-components.html#python">latest version</a>.</p>
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head"><p>Name (Click to initiate download)</p></th>
+<th class="head"><p>Version</p></th>
+<th class="head"><p>Size</p></th>
+<th class="head"><p>Installer</p></th>
+<th class="head"><p>Date</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><a class="reference external" href="https://registrationcenter-download.intel.com/akdlm/IRC_NAS/03aae3a8-623a-47cf-9655-5dd8fcf86430/l_pythoni39_oneapi_p_2023.2.0.49422.sh">Intel Distribution for Python for Linux</a></p></td>
+<td><p>2023.2.0</p></td>
+<td><p>19 MB</p></td>
+<td><p>Online</p></td>
+<td><p>Jul. 17, 2023</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference external" href="https://registrationcenter-download.intel.com/akdlm/IRC_NAS/03aae3a8-623a-47cf-9655-5dd8fcf86430/l_pythoni39_oneapi_p_2023.2.0.49422_offline.sh">Intel Distribution for Python for Linux</a></p></td>
+<td><p>2023.2.0</p></td>
+<td><p>1.1 GB</p></td>
+<td><p>Offline</p></td>
+<td><p>Jul. 17, 2023</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference external" href="https://registrationcenter-download.intel.com/akdlm/IRC_NAS/fbbbbffd-dc8c-4b9c-bb7b-8347b777f6b5/w_pythoni39_oneapi_p_2023.2.0.49423.exe">Intel Distribution for Python for Windows</a></p></td>
+<td><p>2023.2.0</p></td>
+<td><p>12 MB</p></td>
+<td><p>Online</p></td>
+<td><p>Jul. 17, 2023</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference external" href="https://registrationcenter-download.intel.com/akdlm/IRC_NAS/fbbbbffd-dc8c-4b9c-bb7b-8347b777f6b5/w_pythoni39_oneapi_p_2023.2.0.49423_offline.exe">Intel Distribution for Python for Windows</a></p></td>
+<td><p>2023.2.0</p></td>
+<td><p>1.0 GB</p></td>
+<td><p>Offline</p></td>
+<td><p>Jul. 17, 2023</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference external" href="https://registrationcenter-download.intel.com/akdlm/IRC_NAS/58964c88-5b45-427e-9ae8-ad18a23af930/m_pythoni39_oneapi_p_2023.2.0.49425.dmg">Intel Distribution for Python for macOS</a></p></td>
+<td><p>2023.2.0</p></td>
+<td><p>28 MB</p></td>
+<td><p>Online</p></td>
+<td><p>Jul. 17, 2023</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference external" href="https://registrationcenter-download.intel.com/akdlm/IRC_NAS/58964c88-5b45-427e-9ae8-ad18a23af930/m_pythoni39_oneapi_p_2023.2.0.49425_offline.dmg">Intel Distribution for Python for macOS</a></p></td>
+<td><p>2023.2.0</p></td>
+<td><p>468 MB</p></td>
+<td><p>Offline</p></td>
+<td><p>Jul. 17, 2023</p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="install-via-anaconda">
+<h2>Install via Anaconda<a class="headerlink" href="#install-via-anaconda" title="Link to this heading"></a></h2>
+<ol class="arabic">
+<li><p>Follow <a class="reference external" href="https://docs.conda.io/projects/conda/en/latest/user-guide/install/">Conda Installation Guide</a> to install Conda in your environment. If you already have conda installed in your system, please update your conda:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">conda</span> <span class="n">update</span> <span class="n">conda</span>
+</pre></div>
+</div>
+</li>
+<li><p>Add Intel channel. <br>
+Tell conda to choose Intel packages over default packages, when available.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">conda</span> <span class="n">config</span> <span class="o">--</span><span class="n">add</span> <span class="n">channels</span> <span class="n">intel</span>
+</pre></div>
+</div>
+</li>
+<li><p>Install Intel Distribution for Python* via conda. We recommend that you create a new environment while installing. To install the core python3 environment, run:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">conda</span> <span class="n">create</span> <span class="o">-</span><span class="n">n</span> <span class="n">idp</span> <span class="n">intelpython3_core</span> <span class="n">python</span><span class="o">=</span><span class="mf">3.</span><span class="n">x</span>
+</pre></div>
+</div>
+<p><strong>Please note that “x” in “python=3.x” should signify which version of Python* you would like to install.</strong> For example, for Python* version 3.9: conda create -n idp intelpython3_core python=3.9.</p>
+</li>
+<li><p>Activate the conda environment:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">conda</span> <span class="n">activate</span> <span class="n">idp</span>
+</pre></div>
+</div>
+</li>
+</ol>
+</section>
+<section id="install-using-yum-repository">
+<h2>Install Using YUM Repository<a class="headerlink" href="#install-using-yum-repository" title="Link to this heading"></a></h2>
+<p>For the latest instructions on how to install Intel® Distribution for Python* using YUM, please check out <a class="reference external" href="https://www.intel.com/content/www/us/en/developer/articles/guide/installing-free-libraries-and-python-yum-repo.html">this guide</a>.</p>
+</section>
+<section id="install-using-apt-repository">
+<h2>Install Using APT Repository<a class="headerlink" href="#install-using-apt-repository" title="Link to this heading"></a></h2>
+<p>For the latest instructions on how to install Intel® Distribution for Python* using APT, please check out <a class="reference external" href="https://www.intel.com/content/www/us/en/developer/articles/guide/installing-free-libraries-and-python-apt-repo.html">this guide</a>.</p>
+</section>
+<section id="sanity-check">
+<h2>Sanity Check<a class="headerlink" href="#sanity-check" title="Link to this heading"></a></h2>
+<p>After the activation of the environment, type <code class="docutils literal notranslate"><span class="pre">python</span></code> in the command line to find the Python* distribution info.</p>
+<ul>
+<li><p>Linux* &amp; Windows*: <code class="docutils literal notranslate"><span class="pre">python</span></code> <br>
+The distribution info should include <code class="docutils literal notranslate"><span class="pre">Intel</span> <span class="pre">Corporation</span></code>:</p>
+<ul>
+<li><p>Linux:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>Python 3.7.10 (default, Jun 4 2021, 06:52:02)
+[GCC 9.3.0] :: Intel Corporation on linux
+Type &quot;help&quot;, &quot;copyright&quot;, &quot;credits&quot; or &quot;license&quot; for more information.
+Intel(R) Distribution for Python is brought to you by Intel® Corporation.
+Please check out: https://software.intel.com/en-us/python-distribution
+</pre></div>
+</div>
+</li>
+<li><p>Windows:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">Python</span> <span class="mf">3.9.10</span> <span class="p">(</span><span class="n">main</span><span class="p">,</span> <span class="n">Mar</span> <span class="mi">21</span> <span class="mi">2022</span><span class="p">,</span> <span class="mi">08</span><span class="p">:</span><span class="mi">44</span><span class="p">:</span><span class="mi">00</span><span class="p">)</span> <span class="p">[</span><span class="n">MSC</span> <span class="n">v</span><span class="mf">.1916</span> <span class="mi">64</span> <span class="n">bit</span> <span class="p">(</span><span class="n">AMD64</span><span class="p">)]</span> <span class="p">::</span> <span class="n">Intel</span> <span class="n">Corporation</span> <span class="n">on</span> <span class="n">win32</span>
+<span class="n">Type</span> <span class="s2">&quot;help&quot;</span><span class="p">,</span> <span class="s2">&quot;copyright&quot;</span><span class="p">,</span> <span class="s2">&quot;credits&quot;</span> <span class="ow">or</span> <span class="s2">&quot;license&quot;</span> <span class="k">for</span> <span class="n">more</span> <span class="n">information</span><span class="o">.</span>
+<span class="n">Intel</span><span class="p">(</span><span class="n">R</span><span class="p">)</span> <span class="n">Distribution</span> <span class="k">for</span> <span class="n">Python</span> <span class="ow">is</span> <span class="n">brought</span> <span class="n">to</span> <span class="n">you</span> <span class="n">by</span> <span class="n">Intel</span> <span class="n">Corporation</span><span class="o">.</span>
+<span class="n">Please</span> <span class="n">check</span> <span class="n">out</span><span class="p">:</span> <span class="n">https</span><span class="p">:</span><span class="o">//</span><span class="n">software</span><span class="o">.</span><span class="n">intel</span><span class="o">.</span><span class="n">com</span><span class="o">/</span><span class="n">en</span><span class="o">-</span><span class="n">us</span><span class="o">/</span><span class="n">python</span><span class="o">-</span><span class="n">distribution</span>
+</pre></div>
+</div>
+</li>
+</ul>
+<p>These methods can be used as a sanity check that Intel Distribution for Python is properly installed.</p>
+</li>
+</ul>
+</section>
+<section id="sample-code">
+<h2>Sample Code<a class="headerlink" href="#sample-code" title="Link to this heading"></a></h2>
+<p>Run this numpy sample code in a stock Python* environment and in an IntelPython environment. You will see benefits from IntelPython.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+<span class="kn">import</span> <span class="nn">time</span>
+  
+<span class="n">start</span> <span class="o">=</span> <span class="n">time</span><span class="o">.</span><span class="n">time</span><span class="p">()</span>
+  
+<span class="n">rd</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">RandomState</span><span class="p">(</span><span class="mi">88</span><span class="p">)</span>
+<span class="n">a</span> <span class="o">=</span> <span class="n">rd</span><span class="o">.</span><span class="n">randint</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="mi">1000</span><span class="p">,(</span><span class="mi">1000</span><span class="p">,</span><span class="mi">1000</span><span class="p">))</span>
+<span class="n">y</span> <span class="o">=</span> <span class="n">rd</span><span class="o">.</span><span class="n">randint</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="mi">1000</span><span class="p">,(</span><span class="mi">1000</span><span class="p">))</span>
+<span class="n">res</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">linalg</span><span class="o">.</span><span class="n">solve</span><span class="p">(</span><span class="n">a</span><span class="p">,</span><span class="n">y</span><span class="p">)</span>
+  
+<span class="n">end</span> <span class="o">=</span> <span class="n">time</span><span class="o">.</span><span class="n">time</span><span class="p">()</span>
+  
+<span class="nb">print</span><span class="p">(</span><span class="n">res</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Time consumed:&#39;</span><span class="p">,</span><span class="n">end</span><span class="o">-</span><span class="n">start</span><span class="p">)</span>
+</pre></div>
+</div>
+</section>
+<section id="build-your-own-project">
+<h2>Build Your Own Project<a class="headerlink" href="#build-your-own-project" title="Link to this heading"></a></h2>
+<p>No special modifications to your existing Python* projects are required to start using them with this toolkit. Check out the <a class="reference internal" href="#references"><span class="xref myst">Reference Section</span></a> for Github samples.</p>
+</section>
+<section id="references">
+<h2>References<a class="headerlink" href="#references" title="Link to this heading"></a></h2>
+<ul class="simple">
+<li><p><a class="reference external" href="https://huiyan2021.github.io/intelpython.github.io/2023.1.1/getting_started.html">Intel Distribution for Python Landing Page</a></p></li>
+<li><p><a class="reference external" href="https://www.intel.com/content/www/us/en/developer/tools/oneapi/toolkits.html#analytics-kit">Intel AI Analytics Toolkit Landing Page</a></p></li>
+<li><p><a class="reference external" href="https://github.com/oneapi-src/oneAPI-samples/tree/master/AI-and-Analytics/Getting-Started-Samples">Code Samples</a></p></li>
+<li><p><a class="reference external" href="https://www.intel.com/content/www/us/en/docs/oneapi-ai-analytics-toolkit/get-started-guide-linux/2023-1/overview.html">Get Started with the Intel AI Analytics Toolkit for Linux*</a></p></li>
+</ul>
+</section>
+<section id="support">
+<h2>Support<a class="headerlink" href="#support" title="Link to this heading"></a></h2>
+<p>If you have further questions or need support on your workload optimization, please submit your queries to the Intel AI Analytics Toolkit Forum or <a class="reference external" href="https://github.com/IntelPython">IntelPython</a> GitHub, on the Issues or Discussions pages depending on the type of support required.</p>
+</section>
+<section id="notices-and-disclaimers">
+<h2>Notices and Disclaimers<a class="headerlink" href="#notices-and-disclaimers" title="Link to this heading"></a></h2>
+<p>Performance varies by use, configuration and other factors. Learn more at www.Intel.com/PerformanceIndex. <br>
+<br>
+Performance results are based on testing as of dates shown in configurations and may not reflect all publicly available updates. See backup for configuration details. No product or component can be absolutely secure. <br>
+<br>
+Your costs and results may vary.<br>
+<br>
+Intel technologies may require enabled hardware, software or service activation.<br>
+<br>
+© Intel Corporation. Intel, the Intel logo, and other Intel marks are trademarks of Intel Corporation or its subsidiaries. Other names and brands may be claimed as the property of others.</p>
+</section>
+<section id="product-and-performance-information">
+<h2>Product and Performance Information<a class="headerlink" href="#product-and-performance-information" title="Link to this heading"></a></h2>
+<p>Performance varies by use, configuration and other factors. Learn more at www.Intel.com/PerformanceIndex.</p>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="releases.html" class="btn btn-neutral float-left" title="Releases" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="tuning_guide.html" class="btn btn-neutral float-right" title="Performance Tuning Guide" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2024, SR.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>
