@@ -118,3 +118,18 @@ Starting with the Intel® oneAPI 2024.0, Intel will no longer package or release
 #### Deprecation of Intel® Extension for Scikit-Learn* for macOS*
 
 Intel® Extension for Scikit-Learn* on macOS is now deprecated and will be discontinued in the 2024.0 release. Support for Linux*, Windows* and Windows Server* is available.
+
+# Notices and Disclaimers
+Intel technologies may require enabled hardware, software or service activation.
+
+No product or component can be absolutely secure.
+
+Your costs and results may vary.
+
+© Intel Corporation. Intel, the Intel logo, and other Intel marks are trademarks of Intel Corporation or its subsidiaries. Other names and brands may be claimed as the property of others.
+
+No license (express or implied, by estoppel or otherwise) to any intellectual property rights is granted by this document.
+
+The products described may contain design defects or errors known as errata which may cause the product to deviate from published specifications. Current characterized errata are available on request.
+
+Intel disclaims all express and implied warranties, including without limitation, the implied warranties of merchantability, fitness for a particular purpose, and non-infringement, as well as any warranty arising from course of performance, course of dealing, or usage in trade.
