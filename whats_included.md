@@ -1,4 +1,4 @@
-# Features
+# What's included
 
 ## Package and Environment Managers
 Python* package and environment managers are essential tools for productivity. These allow for installation, updating, and removal of no longer needed packages from the Python environment. They also manage multiple Python environments customized by a user for multiple purposes or needs.
