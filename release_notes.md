@@ -19,8 +19,34 @@ For questions or technical support, visit [Intel® Distribution for Python\* Sup
 	- [2019](#2019)
 
 ## 2024 
+### 2024.2
+<details open> 
+	 <summary><b>Expand</b></summary>
+	
+ [Release Notes](https://cdrdv2.intel.com/v1/dl/getContent/825850)
+ 
+
+**What's New:**
+
+The Intel® Distribution for Python, 2024.2 has been updated to include functional and security updates. Users should update to the latest version.
+
+The Intel® Distribution for Python* added the following features:
+
+- Integrated libmamba solver to conda for concurrent package resolution.
+- Version updates of conda packages.
+- The Data Parallel Control Library added the following features:
+	- It offers improved productivity with new sorting and summing functions (`dpt.searchsorted`, `dpt.cumulative_sum`, `dpt.cumulatove_prod`, `dpt.cumulative_logsumexp`).
+	- Added support for the out keyword argument.
+	- Correspondence of tensor functions signatures to array API (keyword-only argument can’t be provided as positional argument).
+	- Updated documentation and bug fixes.
+- The Data Parallel Extension for NumPy added the following features:
+	- Increased productivity with the addition of a new family of cumulative functions and closed functional gaps in the linalg routine.
+	- DPNP is now 100% functional in npbench benchmarks.
+	- Implemented a family of cumulative functions. Full list of mathematical functions supported is available at [Mathematical Functions — Data Parallel Extension for NumPy documentation.](https://intelpython.github.io/dpnp/reference/math.html)
+</details>
+
 ### 2024.1
-<details open>
+<details>
   <summary><b>Expand</b></summary>
 
 [Release Notes](https://www.intel.com/content/www/us/en/content-details/818309/intel-distribution-for-python-2024-1-release-notes.html)
