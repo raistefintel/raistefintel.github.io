@@ -1,6 +1,8 @@
 # Overview
 
-This document provides essential information on installation, key features, compatibility, and support for Intel® Distribution for Python* users looking to leverage the distribution's advanced capabilities for scientific computing, machine learning, and data analytics.
+This document provides essential information on installation, key features, compatibility, and support for Intel® Distribution for Python*. 
+
+To learn what's new in the latest release, refer to [Release notes](https://github.com/raistefintel/raistefintel.github.io/blob/main/release_notes.md).
  
 ## Navigation
 - [General Questions](#general-questions)
