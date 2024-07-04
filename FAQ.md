@@ -1,12 +1,12 @@
 # Overview
 
-
+This document provides essential information on installation, key features, compatibility, and support for Intel® Distribution for Python* users looking to leverage the distribution's advanced capabilities for scientific computing, machine learning, and data analytics.
  
 ## Navigation
 - [General Questions](#general-questions)
 - [System Requirements](#system-requirements)
 - [Licensing, Installation, Updates](#licensing-installation-updates)
-- [Licensing, Installation, Updates](#licensing-installation-updates)
+- [Support and Community](#support-and-community)
 - [Components and Key Features](#components-and-features)
 	- [Intel® Extension for Scikit-learn*](#intel-extension-for-scikit-learn)
 	- [Data Parallel Extensions for Python. Integration with SYCL](#data-parallel-extension-for-python-integration-with-sycl)
@@ -83,7 +83,7 @@
 
 **Q: Are there any software dependencies I need to install before installing Intel Distribution for Python?**
 
-**A:** If using conda-forge\* to install Intel Distribution for Python, follow the [conda-forge\* Installation Instructions](https://github.com/conda-forge/miniforge/?tab=readme-ov-file#install) to install miniforge\* in your environment.  Check [System Requirements](https://github.com/raistefintel/raistefintel.github.io/blob/main/system_requirements.md). 
+**A:** If using conda-forge\* to install Intel Distribution for Python, follow the [conda-forge\* Installation Instructions](https://github.com/conda-forge/miniforge/?tab=readme-ov-file#install) to install miniforge\* in your environment.  Check [System Requirements](https://github.com/raistefintel/raistefintel.github.io/blob/main/system_requirements.md) for specific requirements. 
   
 # Licensing, Installation, Updates 
 
@@ -101,7 +101,7 @@
 
 **Q: Do I need an internet connection to install Intel Distribution for Python?** 
 
-**A:** If you are using the conda\* package manager distribution, an internet connection is typically required to download and install packages. However, Intel also provides offline installer for environments without internet access.  
+**A:** If you are using the conda\* package manager, an internet connection is typically required to download and install packages. However, Intel also provides offline installer for environments without internet access.  
 
 **Q: What versions of Python are available with Intel Distribution for Python?** 
 
@@ -215,6 +215,7 @@ from sklearn.cluster import KMeans `
 **A:** Data Parallel Extension for Numba* allows you to debug SYCL\* kernels with Intel® Distribution for GDB*.  You can access the tutorial by following this [link](https://intelpython.github.io/numba-dpex/latest/user_guide/debugging/index.html).  
 
 **Q: Which devices can be targeted by using Data Parallel Control?**  
+
 **A:** In its current form, Data Parallel Control relies on certain DPC++ extensions of the SYCL standard. Moreover, the binary distribution of Data Parallel Control uses the proprietary Intel(R) oneAPI DPC++ Compiler runtime bundled as part of oneAPI and only supports Intel XPUs. However, Data Parallel Control is compatible with the runtime of the open-source DPC++ SYCL bundle that can be compiled to support a wide range of architectures including CUDA\*, AMD\* ROC, and HIP\*. 
 
 **Q: What packages are included in the Data Parallel Extensions for Python?** 
@@ -262,11 +263,11 @@ from sklearn.cluster import KMeans `
 
 **Q: How much faster is Intel Distribution for Python compared to the standard Python distribution?**  
 
-**A:** The answer can vary depending on the workload, the libraries used, and the hardware configuration. [Deliver Blazing-Fast Python\* Data Science and AI Performance on CPUs—with Minimal Code Changes](https://www.intel.com/content/www/us/en/developer/articles/technical/blazing-fast-python-data-science-ai-performance.html) can be a good start. Also, review benchmarking results published at Intel® Distribution for Python\* [landing page](https://www.intel.com/content/www/us/en/developer/tools/oneapi/distribution-for-python.html#gs.ad8zf4). 
+**A:** The answer can vary depending on the workload, the libraries used, and the hardware configuration. [Deliver Blazing-Fast Python\* Data Science and AI Performance on CPUs—with Minimal Code Changes](https://www.intel.com/content/www/us/en/developer/articles/technical/blazing-fast-python-data-science-ai-performance.html) can be a good start. Also, review benchmarking results published at Intel® Distribution for Python\* [official website](https://www.intel.com/content/www/us/en/developer/tools/oneapi/distribution-for-python.html#gs.ad8zf4). 
 
 **Q: How do I know if my code is running faster with Intel Distribution for Python?**   
 
-**A:** You can benchmark your code using standard Python profiling tools or by measuring the execution time of your scripts before and after switching to Intel Distribution for Python. We did our own experiments: visit Intel® Distribution for Python\* [landing page](https://www.intel.com/content/www/us/en/developer/tools/oneapi/distribution-for-python.html#gs.ad8zf4) for the latest benchmarking results. 
+**A:** You can benchmark your code using standard Python profiling tools or by measuring the execution time of your scripts before and after switching to Intel Distribution for Python. We did our own experiments: visit Intel® Distribution for Python\* [official website](https://www.intel.com/content/www/us/en/developer/tools/oneapi/distribution-for-python.html#gs.ad8zf4) for the latest benchmarking results. 
 
 **Q: Will I see performance improvements in all my Python applications with Intel Distribution for Python?** 
 
@@ -304,11 +305,11 @@ from sklearn.cluster import KMeans `
 
 **Q: Are there benchmarks for Intel® Extension for Scikit-learn\*?** 
 
-**A:** Visit Intel® Distribution for Python\* [landing page](https://www.intel.com/content/www/us/en/developer/tools/oneapi/distribution-for-python.html#gs.ad8zf4) for the latest benchmarking results. In addition, look at [Intel(R) Extension for Scikit-learn\* Github > Acceleration](https://intel.github.io/scikit-learn-intelex/latest/acceleration.html) page.  
+**A:** Visit Intel® Distribution for Python\* [official website](https://www.intel.com/content/www/us/en/developer/tools/oneapi/distribution-for-python.html#gs.ad8zf4) for the latest benchmarking results. In addition, look at [Intel(R) Extension for Scikit-learn\* Github > Acceleration](https://intel.github.io/scikit-learn-intelex/latest/acceleration.html) page.  
 
 **Q: What has Intel done to speed up XGBoost?** 
 
-**A:** A lot of optimizations speed up XGboost, like automatic memory prefetching, reduced memory consumption, and parallelization. XGboost supports single node and distributed training. For in-depth explanations, turn to [An Easy Introduction to XGBoost: A Comprehensive Guide to the Library and Intel Optimizations](https://www.intel.com/content/www/us/en/developer/articles/technical/easy-introduction-xgboost-for-intel-architecture.html). See the Intel® Optimization for XGBoost\* [landing page](https://www.intel.com/content/www/us/en/developer/tools/oneapi/optimization-for-xgboost.html)  for the benchmarks.  
+**A:** A lot of optimizations speed up XGboost, like automatic memory prefetching, reduced memory consumption, and parallelization. XGboost supports single node and distributed training. For in-depth explanations, turn to [An Easy Introduction to XGBoost: A Comprehensive Guide to the Library and Intel Optimizations](https://www.intel.com/content/www/us/en/developer/articles/technical/easy-introduction-xgboost-for-intel-architecture.html). See the Intel® Optimization for XGBoost\* [official website](https://www.intel.com/content/www/us/en/developer/tools/oneapi/optimization-for-xgboost.html)  for the benchmarks.  
 
 **Q: What should I do if I don't see the expected performance improvements with Intel Distribution for Python?** 
 
