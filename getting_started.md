@@ -3,7 +3,7 @@ The Intel® Distribution for Python\* is a cluster of packages including NumPy, 
 
 ## Supported Installation Options
 
-### Install via Anaconda
+### Install via Anaconda (available for Windows* and Linux*)
 1. Follow [Conda Installation Guide](https://docs.conda.io/projects/conda/en/latest/user-guide/install/) to install Conda in your environment. If you already have conda installed in your system, please update your conda:
    ```
    conda update conda
@@ -22,6 +22,11 @@ The Intel® Distribution for Python\* is a cluster of packages including NumPy, 
    ```
    conda activate idp
    ```
+   
+### Offline Installer (available for Windows* and Linux*)
+
+Please check out this [page](https://www.intel.com/content/www/us/en/developer/tools/oneapi/distribution-python-download.html) for the installation instructions.
+
 ## Sanity Check
 After the activation of the environment, type `python` in the command line to find the Python\* distribution info.
 - Linux\* & Windows\*: `python` <br>
