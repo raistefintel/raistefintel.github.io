@@ -1,7 +1,7 @@
 # Introduction
 This document provides details about hardware, operating system, and software prerequisites for the [Intel® Distribution for Python*](https://www.intel.com/content/www/us/en/developer/tools/oneapi/distribution-for-python.html).
 
-Release notes can be found in a [dedicated article.](https://github.com/raistefintel/raistefintel.github.io/blob/main/release_notes.md))
+Release notes can be found in a ([dedicated article.](https://github.com/raistefintel/raistefintel.github.io/blob/main/release_notes.md))
 
 
 # Supported Host Operating Systems
