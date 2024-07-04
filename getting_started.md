@@ -2,6 +2,10 @@
 The Intel® Distribution for Python\* is a cluster of packages including NumPy, SciPy, scikit-learn, XGBoost and Data Parallel Extensions for Python*. It contains packages that are optimized via the Intel® oneAPI Math Kernel Library (oneMKL) and the Intel® oneAPI Data Analytics Library (oneDAL) to make Python\* application more efficient.
 
 ## Supported Installation Options
+   
+### Offline Installer (available for Windows* and Linux*)
+
+Please check out this [page](https://www.intel.com/content/www/us/en/developer/tools/oneapi/distribution-python-download.html) for the installation instructions.
 
 ### Install via Anaconda (available for Windows* and Linux*)
 1. Follow [Conda Installation Guide](https://docs.conda.io/projects/conda/en/latest/user-guide/install/) to install Conda in your environment. If you already have conda installed in your system, please update your conda:
@@ -22,10 +26,6 @@ The Intel® Distribution for Python\* is a cluster of packages including NumPy, 
    ```
    conda activate idp
    ```
-   
-### Offline Installer (available for Windows* and Linux*)
-
-Please check out this [page](https://www.intel.com/content/www/us/en/developer/tools/oneapi/distribution-python-download.html) for the installation instructions.
 
 ## Sanity Check
 After the activation of the environment, type `python` in the command line to find the Python\* distribution info.
