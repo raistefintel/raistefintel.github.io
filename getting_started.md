@@ -1,5 +1,5 @@
 # Get Started with the Intel® Distribution for Python\*
-The Intel® Distribution for Python\* is a cluster of packages including NumPy, SciPy, and more. It contains packages that are optimized via the Intel® oneAPI Math Kernel Library (oneMKL) and the Intel® oneAPI Data Analytics Library (oneDAL) to make Python\* application more efficient.
+The Intel® Distribution for Python\* is a cluster of packages including NumPy, SciPy, scikit-learn, XGBoost and Data Parallel Extensions for Python*. It contains packages that are optimized via the Intel® oneAPI Math Kernel Library (oneMKL) and the Intel® oneAPI Data Analytics Library (oneDAL) to make Python\* application more efficient.
 
 ## Supported Installation Options
 
@@ -67,12 +67,11 @@ No special modifications to your existing Python* projects are required to start
 
 ## References
 - [Intel Distribution for Python Landing Page](https://huiyan2021.github.io/intelpython.github.io/2023.1.1/getting_started.html)
-- [Intel AI Analytics Toolkit Landing Page](https://www.intel.com/content/www/us/en/developer/tools/oneapi/toolkits.html#analytics-kit)
+- [Intel AI Tools Landing Page](https://www.intel.com/content/www/us/en/developer/tools/oneapi/ai-analytics-toolkit.html)
 - [Code Samples](https://github.com/oneapi-src/oneAPI-samples/tree/master/AI-and-Analytics/Getting-Started-Samples)
-- [Get Started with the Intel AI Analytics Toolkit for Linux\*](https://www.intel.com/content/www/us/en/docs/oneapi-ai-analytics-toolkit/get-started-guide-linux/2023-1/overview.html)
 
 ## Support
-If you have further questions or need support on your workload optimization, please submit your queries to the Intel AI Analytics Toolkit Forum or [IntelPython](https://github.com/IntelPython) GitHub, on the Issues or Discussions pages depending on the type of support required.
+If you have further questions or need support on your workload optimization, please submit your queries to the Intel® Distribution for Python\* Forum or [IntelPython](https://github.com/IntelPython) GitHub, on the Issues or Discussions pages depending on the type of support required.
 
 ## Notices and Disclaimers
 Performance varies by use, configuration and other factors. Learn more at www.Intel.com/PerformanceIndex. <br>
@@ -84,9 +83,6 @@ Your costs and results may vary.<br>
 Intel technologies may require enabled hardware, software or service activation.<br>
 <br>
 © Intel Corporation. Intel, the Intel logo, and other Intel marks are trademarks of Intel Corporation or its subsidiaries. Other names and brands may be claimed as the property of others.
-
-## Product and Performance Information
-Performance varies by use, configuration and other factors. Learn more at www.Intel.com/PerformanceIndex.
   
 
       
