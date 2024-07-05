@@ -1,4 +1,4 @@
-# Overview
+# Frequently Asked Questions (FAQs) about Intel® Distribution for Python\*
 
 This document provides essential information on installation, key features, compatibility, and support for Intel® Distribution for Python*. 
 
@@ -15,7 +15,7 @@ To learn what's new in the latest release, refer to [Release notes](https://gith
 - [Performance](#performance)
 
 
-# General Questions
+## General Questions
 
 
 **Q: What is Intel® Distribution for Python\*?** 
@@ -40,7 +40,6 @@ To learn what's new in the latest release, refer to [Release notes](https://gith
 
 **Q: Are there any known issues with Intel Distribution for Python?** 
 **A:** As with any software, there may be known issues at the time of release.  Check [Intel® Distribution for Python\* Known Issues](https://www.intel.com/content/www/us/en/developer/articles/troubleshooting/python-known-issues.html) for more information about the current release.  
-
 **Q: Are there any official code samples?** 
 
 **A:** Yes, explore [GitHub: oneAPI-samples](https://oneapi-src.github.io/oneAPI-samples/). 
@@ -50,7 +49,7 @@ To learn what's new in the latest release, refer to [Release notes](https://gith
 **A:** Yes, consider using [Intel® Tiber™ Developer Cloud](https://www.intel.com/content/www/us/en/developer/tools/devcloud/services.html). Once you create an account, navigate to Training on the left panel to see a list of available Jupyter\* notebooks.  
 
 
-# System Requirements 
+## System Requirements 
 
 **Q: Can I install Intel Distribution for Python on any operating system?**
 
@@ -87,7 +86,7 @@ To learn what's new in the latest release, refer to [Release notes](https://gith
 
 **A:** If using conda-forge\* to install Intel Distribution for Python, follow the [conda-forge\* Installation Instructions](https://github.com/conda-forge/miniforge/?tab=readme-ov-file#install) to install miniforge\* in your environment.  Check [System Requirements](https://github.com/raistefintel/raistefintel.github.io/blob/main/system_requirements.md) for specific requirements. 
   
-# Licensing, Installation, Updates 
+## Licensing, Installation, Updates 
 
 **Q: Is Intel Distribution for Python free to use?**
 
@@ -155,7 +154,7 @@ or download the latest version from the [official website](https://www.intel.com
 **A:** If you encounter issues during installation and your system meets all of the prerequisites, you should try restarting your machine. If the problem persists, you can open a new topic on [support forums](https://community.intel.com/t5/Intel-Distribution-for-Python/bd-p/distribution-python). With your active Priority Support, you can get assistance for your Intel® toolkits through the [Online Service Center](https://www.intel.com/content/www/us/en/developer/get-help/priority-support.html).
 
 
-# Support and Community 
+## Support and Community 
 
 **Q: Is there any support or community for Intel Distribution for Python?** 
 
@@ -170,9 +169,9 @@ or download the latest version from the [official website](https://www.intel.com
 **A:** You can open a new topic on [support forums](https://community.intel.com/t5/Intel-Distribution-for-Python/bd-p/distribution-python). With your active Priority Support, you can get assistance for your Intel® toolkits through the [Online Service Center](https://www.intel.com/content/www/us/en/developer/get-help/priority-support.html).
 
 
-# Components and Key Features 
+## Components and Key Features 
 
-## Intel® Extension for Scikit-learn* 
+### Intel® Extension for Scikit-learn* 
 
 **Q: How can I start using Intel® Extension for Scikit-learn\*?**  
 
@@ -198,7 +197,7 @@ from sklearn.cluster import KMeans `
 **A:** You can explore examples on GitHub by following [oneAPI Samples -> AI and Analytics Samples](https://github.com/oneapi-src/oneAPI-samples/tree/master/AI-and-Analytics). Also, visit [Github: scikit-learn-intelex](https://intel.github.io/scikit-learn-intelex/latest/samples.html) for more. 
 
 
-## Data Parallel Extensions for Python. Integration with SYCL* 
+### Data Parallel Extensions for Python. Integration with SYCL* 
 
 **Q: Is there integration with SYCL?**  
 
@@ -245,7 +244,7 @@ from sklearn.cluster import KMeans `
 **A:** Consider using [PyTorch\* Optimizations from Intel](https://www.intel.com/content/www/us/en/developer/tools/oneapi/optimization-for-pytorch.html) and [TensorFlow\* Optimizations from Intel](https://www.intel.com/content/www/us/en/developer/tools/oneapi/optimization-for-tensorflow.html#gs.8ntf1m) respectively. 
 
 
-# Performance 
+## Performance 
 
 
 **Q: What optimizations are shipped in Intel Distribution for Python?** 
