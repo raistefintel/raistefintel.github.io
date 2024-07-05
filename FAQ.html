@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" data-content_root="./">
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.19: https://docutils.sourceforge.io/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Overview &mdash; Intel Distribution for Python 0.1 documentation</title>
+      <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=80d5e7a1" />
+      <link rel="stylesheet" type="text/css" href="_static/css/theme.css?v=19f00094" />
+
+  
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script src="_static/jquery.js?v=5d32c60e"></script>
+        <script src="_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+        <script src="_static/documentation_options.js?v=2709fde1"></script>
+        <script src="_static/doctools.js?v=9a2dae69"></script>
+        <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="prev" title="Get Started with the Intel® Distribution for Python*" href="getting_started.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="index.html" class="icon icon-home">
+            Intel Distribution for Python
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="intro.html">Welcome to the Intel® Distribution for Python* documentation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="getting_started.html">Get Started with the Intel® Distribution for Python*</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Overview</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#navigation">Navigation</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="#general-questions">General Questions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="#system-requirements">System Requirements</a></li>
+<li class="toctree-l1"><a class="reference internal" href="#licensing-installation-updates">Licensing, Installation, Updates</a></li>
+<li class="toctree-l1"><a class="reference internal" href="#support-and-community">Support and Community</a></li>
+<li class="toctree-l1"><a class="reference internal" href="#components-and-key-features">Components and Key Features</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#intel-extension-for-scikit-learn">Intel® Extension for Scikit-learn*</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#data-parallel-extensions-for-python-integration-with-sycl">Data Parallel Extensions for Python. Integration with SYCL*</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="#performance">Performance</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">Intel Distribution for Python</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="index.html" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active">Overview</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="_sources/FAQ.md.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="overview">
+<h1>Overview<a class="headerlink" href="#overview" title="Link to this heading"></a></h1>
+<p>This document provides essential information on installation, key features, compatibility, and support for Intel® Distribution for Python*.</p>
+<p>To learn what’s new in the latest release, refer to <a class="reference external" href="https://github.com/raistefintel/raistefintel.github.io/blob/main/release_notes.md">Release notes</a>.</p>
+<section id="navigation">
+<h2>Navigation<a class="headerlink" href="#navigation" title="Link to this heading"></a></h2>
+<ul class="simple">
+<li><p><a class="reference internal" href="#general-questions"><span class="xref myst">General Questions</span></a></p></li>
+<li><p><a class="reference internal" href="#system-requirements"><span class="xref myst">System Requirements</span></a></p></li>
+<li><p><a class="reference internal" href="#licensing-installation-updates"><span class="xref myst">Licensing, Installation, Updates</span></a></p></li>
+<li><p><a class="reference internal" href="#support-and-community"><span class="xref myst">Support and Community</span></a></p></li>
+<li><p><a class="reference internal" href="#components-and-features"><span class="xref myst">Components and Key Features</span></a></p>
+<ul>
+<li><p><a class="reference internal" href="#intel-extension-for-scikit-learn"><span class="xref myst">Intel® Extension for Scikit-learn*</span></a></p></li>
+<li><p><a class="reference internal" href="#data-parallel-extension-for-python-integration-with-sycl"><span class="xref myst">Data Parallel Extensions for Python. Integration with SYCL</span></a></p></li>
+</ul>
+</li>
+<li><p><a class="reference internal" href="performance.html"><span class="doc std std-doc">Performance</span></a></p></li>
+</ul>
+</section>
+</section>
+<section id="general-questions">
+<h1>General Questions<a class="headerlink" href="#general-questions" title="Link to this heading"></a></h1>
+<p><strong>Q: What is Intel® Distribution for Python*?</strong></p>
+<p><strong>A:</strong> Intel Distribution for Python is a version of the Python programming language that has been optimized for performance on Intel hardware. It includes performance-enhanced versions of popular Python libraries and tools to accelerate Python workflows.</p>
+<p><strong>Q: Why is Intel doing Intel Distribution for Python?</strong></p>
+<p><strong>A:</strong> Intel created Intel Distribution for Python to address the growing demand for high-performance computing in the Python ecosystem. Python is widely used in scientific computing, data analysis, artificial intelligence, and machine learning, among other fields. However, Python’s ease of use often comes at the cost of performance, especially when compared to lower-level languages like C or Fortran.</p>
+<p><strong>Q: Does Intel Distribution for Python support all Python libraries?</strong></p>
+<p><strong>A:</strong> Intel Distribution for Python supports many popular Python libraries, especially those used in scientific and numerical computing. Refer to <a class="reference external" href="https://www.intel.com/content/www/us/en/developer/articles/tool/whats-included-distribution-for-python.html">What’s Included in the Intel® Distribution for Python*</a> for a list of supported packages.</p>
+<p><strong>Q: How does Intel Distribution for Python differ from Anaconda* Python?</strong></p>
+<p><strong>A:</strong> The main difference is that Intel Distribution for Python is optimized for performance on Intel hardware. It includes Intel Performance Libraries such as <strong> Intel® oneAPI Math Kernel Library (oneMKL), Intel® oneAPI Data Analytics Library (oneDAL), and Intel® Integrated Performance Primitives (Intel® IPP)</strong>, which can significantly speed up mathematical, scientific, and analytical computations.</p>
+<p><strong>Q: Can I run Intel Distribution for Python on a virtual machine or cloud environment?</strong></p>
+<p><strong>A:</strong> Yes, Intel Distribution for Python can be run on virtual machines and in cloud environments.  We recommend trying Intel Distribution for Python at <a class="reference external" href="https://www.intel.com/content/www/us/en/developer/tools/devcloud/services.html">Intel® Tiber™ Developer Cloud</a>.</p>
+<p><strong>Q: Are there any known issues with Intel Distribution for Python?</strong>
+<strong>A:</strong> As with any software, there may be known issues at the time of release.  Check <a class="reference external" href="https://www.intel.com/content/www/us/en/developer/articles/troubleshooting/python-known-issues.html">Intel® Distribution for Python* Known Issues</a> for more information about the current release.</p>
+<p><strong>Q: Are there any official code samples?</strong></p>
+<p><strong>A:</strong> Yes, explore <a class="reference external" href="https://oneapi-src.github.io/oneAPI-samples/">GitHub: oneAPI-samples</a>.</p>
+<p><strong>Q: Are there any learning resources for Intel Distribution for Python?</strong></p>
+<p><strong>A:</strong> Yes, consider using <a class="reference external" href="https://www.intel.com/content/www/us/en/developer/tools/devcloud/services.html">Intel® Tiber™ Developer Cloud</a>. Once you create an account, navigate to Training on the left panel to see a list of available Jupyter* notebooks.</p>
+</section>
+<section id="system-requirements">
+<h1>System Requirements<a class="headerlink" href="#system-requirements" title="Link to this heading"></a></h1>
+<p><strong>Q: Can I install Intel Distribution for Python on any operating system?</strong></p>
+<p><strong>A:</strong> Intel Distribution for Python is available on Linux* and Windows*. For up-to-date information check <a class="reference external" href="https://github.com/raistefintel/raistefintel.github.io/blob/main/system_requirements.md">System Requirements</a>.</p>
+<p><strong>Q: Does Intel Distribution for Python support both 32-bit and 64-bit systems?</strong></p>
+<p><strong>A:</strong> Intel Distribution for Python supports 64-bit systems.</p>
+<p><strong>Q: Does Intel Distribution for Python support Intel’s GPUs (graphics processing units), AI (Artificial Intelligence) chips, NVIDIA*, and AMD* GPUs?</strong></p>
+<p><strong>A:</strong> Yes, there are components that support GPU. Refer to <a class="reference external" href="https://github.com/raistefintel/raistefintel.github.io/blob/main/system_requirements.md">System Requirements</a> for the up-to-date list of supported hardware and explore <a class="reference external" href="https://www.intel.com/content/www/us/en/developer/tools/oneapi/training/heterogeneous-numba-data-parallel-python-ai-hpc.html#gs.acoo0b">Heterogeneous Programming Using Data Parallel Extension for Numba* for AI and HPC</a> to learn more about GPU programming with Python.</p>
+<p><strong>Q: Do I need a GPU to use Intel Distribution for Python?</strong></p>
+<p><strong>A:</strong> A dedicated graphics card is not required for Intel Distribution for Python unless the user’s specific applications (such as certain machine learning frameworks) require GPU acceleration.</p>
+<p><strong>Q: Can I use Intel Distribution for Python on non-Intel hardware?</strong>
+<strong>A:</strong> While the distribution is optimized for Intel® processors, it can still run on compatible non-Intel processors. However, the performance gains from Intel-specific optimizations may not be reached on other vendors’ hardware.</p>
+<p><strong>Q: Can Intel Distribution for Python be used on NVIDIA GPUs?</strong></p>
+<p><strong>A:</strong> Data Parallel Controls supports NVIDIA* devices. Follow <a class="reference external" href="https://github.com/IntelPython/dpctl/discussions/1124">GitHub instructions</a> on how to compile Data Parallel Controls for CUDA devices.</p>
+<p><strong>Q: Can Intel Distribution for Python be used on AMD* CPUs?</strong></p>
+<p><strong>A:</strong> Intel Distribution for Python is primarily optimized for Intel hardware. However, the distribution can still be used on systems with AMD* CPUs, with some considerations: optimized implementations of NumPy and SciPy libraries may still offer performance improvements due to optimizations that are not exclusive to Intel hardware, such as certain SIMD (Single Instruction, Multiple Data) instructions that are also supported by modern AMD* processors.</p>
+<p><strong>Q: How much disk space is required to install Intel Distribution for Python?</strong></p>
+<p><strong>A:</strong> The required disk space can vary depending on the packages and components the user chooses to install. It is recommended to have several gigabytes of free space to accommodate the distribution and additional packages. You can get a minimal required disk space at the <a class="reference external" href="https://www.intel.com/content/www/us/en/developer/tools/oneapi/distribution-python-download.html">Download page</a>.  Also, the offline installer notifies you if you do not have enough space on your disk. You can also take advantage of specific optimized libraries from conda-forge* without installing the whole distribution (NumPy, Data Parallel Extension for NumPy, Intel® Extension for Scikit-learn*, etc.)</p>
+<p><strong>Q: Are there any software dependencies I need to install before installing Intel Distribution for Python?</strong></p>
+<p><strong>A:</strong> If using conda-forge* to install Intel Distribution for Python, follow the <a class="reference external" href="https://github.com/conda-forge/miniforge/?tab=readme-ov-file#install">conda-forge* Installation Instructions</a> to install miniforge* in your environment.  Check <a class="reference external" href="https://github.com/raistefintel/raistefintel.github.io/blob/main/system_requirements.md">System Requirements</a> for specific requirements.</p>
+</section>
+<section id="licensing-installation-updates">
+<h1>Licensing, Installation, Updates<a class="headerlink" href="#licensing-installation-updates" title="Link to this heading"></a></h1>
+<p><strong>Q: Is Intel Distribution for Python free to use?</strong></p>
+<p><strong>A:</strong> Yes, Intel Distribution for Python is available for free. You can download and use it without any licensing fees.</p>
+<p><strong>Q: How can I install Intel Distribution for Python?</strong></p>
+<p><strong>A:</strong> Intel Distribution for Python can be installed using the conda-forge* distribution by creating a new environment and with a standalone installer. Refer to <a class="reference external" href="https://www.intel.com/content/www/us/en/developer/articles/technical/get-started-with-intel-distribution-for-python.html">Get Started With Intel® Distribution for Python*</a> for more details.</p>
+<p><strong>Q: How does Intel Distribution for Python <a class="reference external" href="https://www.intel.com/content/www/us/en/developer/tools/oneapi/distribution-for-python.html">installed by the offline installer</a> differ from Intel Python in conda-forge*?</strong></p>
+<p><strong>A:</strong> There is no difference. The offline installer and conda-forge* are simply different distribution channels. The offline installer is best suited for environments where internet access is limited or where a standalone installation is preferred. The conda-forge*-based installation offers the convenience of package and environment management, as well as easier updates, but it requires internet access for initial setup and for accessing package repositories. Refer to <a class="reference external" href="https://www.intel.com/content/www/us/en/developer/articles/technical/get-started-with-intel-distribution-for-python.html">Get Started With Intel® Distribution for Python*</a> for detailed installation instructions for both.</p>
+<p><strong>Q: Do I need an internet connection to install Intel Distribution for Python?</strong></p>
+<p><strong>A:</strong> If you are using the conda* package manager, an internet connection is typically required to download and install packages. However, Intel also provides offline installer for environments without internet access.</p>
+<p><strong>Q: What versions of Python are available with Intel Distribution for Python?</strong></p>
+<p><strong>A:</strong> Intel Distribution for Python typically supports recent versions of Python. You should check the Anaconda Cloud channel or run <code class="docutils literal notranslate"><span class="pre">python</span> <span class="pre">--version</span></code> or <code class="docutils literal notranslate"><span class="pre">conda</span> <span class="pre">info</span></code> after installing Intel Distribution for Python to get the version.</p>
+<p><strong>Q: How do I update Intel Distribution for Python?</strong></p>
+<p><strong>A:</strong> You could update Intel Distribution for Python using the conda* package manager:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">conda</span> <span class="n">activate</span> <span class="n">myenv</span> 
+<span class="n">conda</span> <span class="n">update</span> <span class="n">intel</span><span class="p">::</span><span class="n">intelpython</span> 
+</pre></div>
+</div>
+<p>or download the latest version from the <a class="reference external" href="https://www.intel.com/content/www/us/en/developer/tools/oneapi/distribution-for-python.html">official website</a>.</p>
+<p><strong>Q: Will I automatically receive updates for Intel Distribution for Python?</strong></p>
+<p><strong>A:</strong> No, updates are not automatic. To update:
+- if you used conda-forge* to install, check for updates and apply them using the conda command (<code class="docutils literal notranslate"><span class="pre">conda</span> <span class="pre">update</span> <span class="pre">-all</span></code>),
+- if you used the offline installer, download the latest version from the <a class="reference external" href="https://www.intel.com/content/www/us/en/developer/tools/oneapi/distribution-for-python.html">official website</a>.</p>
+<p><strong>Q: How can I uninstall Intel Distribution for Python?</strong></p>
+<p><strong>A:</strong> If you installed it using conda-forge*, uninstall Intel Distribution for Python using conda command. Otherwise, run the installer:
+- On Windows: Installed Apps -&gt; find Intel Distribution for Python and run installer in Uninstall mode.
+- On Linux: find the <code class="docutils literal notranslate"><span class="pre">installer</span></code> folder and run the installer in Uninstall mode.</p>
+<p><strong>Q: What should I do if I encounter issues after updating Intel Distribution for Python?</strong></p>
+<p><strong>A:</strong> If you encounter issues after an update, you can try rolling back to a previous version of the package or environment. If the problem persists, you can seek support from <a class="reference external" href="https://community.intel.com/t5/Intel-Distribution-for-Python/bd-p/distribution-python">support forums</a>, or check <a class="reference external" href="https://www.intel.com/content/www/us/en/developer/articles/troubleshooting/python-known-issues.html">Intel® Distribution for Python* Known Issues</a>. With your active Priority Support, you can get assistance for your Intel® toolkits through the <a class="reference external" href="https://www.intel.com/content/www/us/en/developer/get-help/priority-support.html">Online Service Center</a>.</p>
+<p><strong>Q: What is the license for Intel Distribution for Python?</strong></p>
+<p><strong>A:</strong> You can find more details at <a class="reference external" href="https://www.intel.com/content/www/us/en/developer/articles/license/end-user-license-agreement.html">End User License Agreement (EULA).</a></p>
+<p><strong>Q: Can I use Intel Distribution for Python for commercial purposes?</strong></p>
+<p><strong>A:</strong> You can find more details at <a class="reference external" href="https://www.intel.com/content/www/us/en/developer/articles/license/end-user-license-agreement.html">End User License Agreement (EULA).</a></p>
+<p><strong>Q: Is Intel Distribution for Python open source?</strong></p>
+<p><strong>A:</strong> Intel Distribution for Python is built upon the standard Python, which is open source, and it includes various Intel Performance Libraries that are provided for free and are often open source themselves.  Intel’s approach is to provide a pre-packaged, performance-optimized version of Python that can be used out of the box. While the distribution integrates and optimizes open-source Python libraries, the specific build, components and optimizations applied by Intel are proprietary.</p>
+<p><strong>Q: Can I contribute to Intel Distribution for Python?</strong></p>
+<p><strong>A:</strong> Contributions are welcome. You can explore GitHub repository https://github.com/IntelPython for more details.</p>
+<p><strong>Q: What should I do if I encounter installation issues with Intel Distribution for Python?</strong></p>
+<p><strong>A:</strong> If you encounter issues during installation and your system meets all of the prerequisites, you should try restarting your machine. If the problem persists, you can open a new topic on <a class="reference external" href="https://community.intel.com/t5/Intel-Distribution-for-Python/bd-p/distribution-python">support forums</a>. With your active Priority Support, you can get assistance for your Intel® toolkits through the <a class="reference external" href="https://www.intel.com/content/www/us/en/developer/get-help/priority-support.html">Online Service Center</a>.</p>
+</section>
+<section id="support-and-community">
+<h1>Support and Community<a class="headerlink" href="#support-and-community" title="Link to this heading"></a></h1>
+<p><strong>Q: Is there any support or community for Intel Distribution for Python?</strong></p>
+<p><strong>A:</strong> Yes, Intel provides support for the distribution, and there is also a community of users https://community.intel.com/t5/Intel-Distribution-for-Python/bd-p/distribution-python</p>
+<p><strong>Q: Where can I find support for Intel Distribution for Python?</strong></p>
+<p><strong>A:</strong> You can find <a class="reference external" href="https://community.intel.com/t5/Intel-Distribution-for-Python/bd-p/distribution-python">support forums</a>, <a class="reference external" href="https://www.intel.com/content/www/us/en/developer/tools/oneapi/distribution-for-python.html#gs.7nq8up">documentation</a>, and resources on the official Intel website and <a class="reference external" href="https://github.com/IntelPython">GitHub repository</a>.</p>
+<p><strong>Q: How do I report bugs or request features for Intel Distribution for Python?</strong></p>
+<p><strong>A:</strong> You can open a new topic on <a class="reference external" href="https://community.intel.com/t5/Intel-Distribution-for-Python/bd-p/distribution-python">support forums</a>. With your active Priority Support, you can get assistance for your Intel® toolkits through the <a class="reference external" href="https://www.intel.com/content/www/us/en/developer/get-help/priority-support.html">Online Service Center</a>.</p>
+</section>
+<section id="components-and-key-features">
+<h1>Components and Key Features<a class="headerlink" href="#components-and-key-features" title="Link to this heading"></a></h1>
+<section id="intel-extension-for-scikit-learn">
+<h2>Intel® Extension for Scikit-learn*<a class="headerlink" href="#intel-extension-for-scikit-learn" title="Link to this heading"></a></h2>
+<p><strong>Q: How can I start using Intel® Extension for Scikit-learn*?</strong></p>
+<p><strong>A:</strong> Once you complete the steps in the <a class="reference external" href="https://www.intel.com/content/www/us/en/developer/articles/technical/get-started-with-intel-distribution-for-python.html">Get Started Guide</a>, you can start using <a class="reference external" href="https://github.com/intel/scikit-learn-intelex/tree/main">Intel® Extension for Scikit-learn*</a>, taking advantage of the performance optimizations provided by Intel.  Also, you can find installation instructions on <a class="reference external" href="https://github.com/intel/scikit-learn-intelex/blob/main/INSTALL.md">GitHub</a>.</p>
+<p><strong>Q: Which algorithms are supported by Intel® Extension for Scikit-learn*?</strong></p>
+<p><strong>A:</strong> Refer to <a class="reference external" href="https://intel.github.io/scikit-learn-intelex/latest/algorithms.html">Supported Algorithms</a>.</p>
+<p><strong>Q: How can I enable Intel® Extension for Scikit-learn* in my Python code?</strong></p>
+<p><strong>A:</strong> You can use the following code:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span># Turn on scikit-learn optimizations with these 2 simple lines: 
+from sklearnex import patch_sklearn 
+patch_sklearn()  
+# Import scikit-learn algorithms after the patch is enabled  
+from sklearn.cluster import KMeans ` 
+</pre></div>
+</div>
+<p><strong>Q: Are there any tutorials or code samples available for learning how to use Intel® Extension for Scikit-learn*?</strong></p>
+<p><strong>A:</strong> You can explore examples on GitHub by following <a class="reference external" href="https://github.com/oneapi-src/oneAPI-samples/tree/master/AI-and-Analytics">oneAPI Samples -&gt; AI and Analytics Samples</a>. Also, visit <a class="reference external" href="https://intel.github.io/scikit-learn-intelex/latest/samples.html">Github: scikit-learn-intelex</a> for more.</p>
+</section>
+<section id="data-parallel-extensions-for-python-integration-with-sycl">
+<h2>Data Parallel Extensions for Python. Integration with SYCL*<a class="headerlink" href="#data-parallel-extensions-for-python-integration-with-sycl" title="Link to this heading"></a></h2>
+<p><strong>Q: Is there integration with SYCL?</strong></p>
+<p><strong>A:</strong> Yes! Consider using <a class="reference external" href="https://github.com/IntelPython/dpctl">Data Parallel Control (dpctl)</a>  or <a class="reference external" href="https://github.com/IntelPython/numba-dpex">Data Parallel Extension for Numba* (numba-dpex)</a>. Data Parallel Control provides C and Python bindings for SYCL 2020. It is used when there is a need to explicitly manage SYCL devices and memory within Python code. Data Parallel Extension for Numba* is a free and open-source LLVM-based code generator for portable accelerator programming in Python. It is an extension to the open-source Numba* Just-In-Time (JIT) compiler that enables Python functions to be offloaded to SYCL-compatible devices.</p>
+<p><strong>Q: What are the key differences between Data Parallel Extension for Numba* and the standard Numba* JIT compiler?</strong></p>
+<p><strong>A:</strong> The Data Parallel Extension for Numba* kernel API is developed with the aim of providing SYCL*-like kernel programming features directly in Python. Refer to <a class="reference external" href="https://intelpython.github.io/numba-dpex/latest/supported_sycl_features.html">SYCL* and numba-dpex Feature Comparison</a> for a summary of the SYCL* kernel programming features that are currently supported in Data Parallel Extension for Numba* kernel API. It is important to note, however, that Data Parallel Extension for Numba* does not implement wrappers or analogs of SYCL’s host-callable runtime API. Such features are provided by the <a class="reference external" href="https://github.com/IntelPython/dpctl">Data Parallel Control</a> package.</p>
+<p><strong>Q: Are there any tutorials or code samples available for learning how to use Data Parallel Extension for Numba*?</strong></p>
+<p><strong>A:</strong> There is a <a class="reference external" href="https://intelpython.github.io/dpctl/latest/index.html">tutorial</a> covering the Data Parallel Extension for Numba* kernel programming API (kapi) and introduces the concepts needed to write data-parallel kernels in Data Parallel Extension for Numba*</p>
+<p><strong>Q: How can I debug applications that use Data Parallel Extension for Numba*?</strong></p>
+<p><strong>A:</strong> Data Parallel Extension for Numba* allows you to debug SYCL* kernels with Intel® Distribution for GDB*.  You can access the tutorial by following this <a class="reference external" href="https://intelpython.github.io/numba-dpex/latest/user_guide/debugging/index.html">link</a>.</p>
+<p><strong>Q: Which devices can be targeted by using Data Parallel Control?</strong></p>
+<p><strong>A:</strong> In its current form, Data Parallel Control relies on certain DPC++ extensions of the SYCL standard. Moreover, the binary distribution of Data Parallel Control uses the proprietary Intel(R) oneAPI DPC++ Compiler runtime bundled as part of oneAPI and only supports Intel XPUs. However, Data Parallel Control is compatible with the runtime of the open-source DPC++ SYCL bundle that can be compiled to support a wide range of architectures including CUDA*, AMD* ROC, and HIP*.</p>
+<p><strong>Q: What packages are included in the Data Parallel Extensions for Python?</strong></p>
+<p><strong>A:</strong> Data Parallel Extension for Numpy*, Data Parallel Extension for Numba*, Data Parallel Control library.</p>
+<p><strong>Q: Are there any demos for Data Parallel Extensions for Python?</strong></p>
+<p><strong>A:</strong> Yes, currently there are two demos available: the Monte Carlo method to estimate the value of Pi, and a visualization of the breathtaking process of diving in the famous Mandelbrot fractal.  You can find them on our GitHub: <a class="reference external" href="https://github.com/IntelPython/DPEP/tree/main/demos">DPEP &gt; demos</a>.</p>
+<p><strong>Q: Are there any tutorials or code samples available for learning how to use Data Parallel Extensions for Python?</strong></p>
+<p><strong>A:</strong> You can explore examples on GitHub by following <a class="reference external" href="https://github.com/IntelPython/dpctl/tree/master/examples/cython">dpctl &gt; examples &gt; cython</a> and <a class="reference external" href="https://github.com/IntelPython/DPEP/tree/main/examples">DPEP &gt; examples</a>.</p>
+<p><strong>Q: How can I start using Intel accelerated NumPy?</strong></p>
+<p><strong>A:</strong> Once you complete <a class="reference external" href="https://www.intel.com/content/www/us/en/developer/articles/technical/get-started-with-intel-distribution-for-python.html">Get Started Guide</a>, you can start using Intel-accelerated versions of NumPy, taking advantage of the performance optimizations provided by Intel.</p>
+<p><strong>Q: How does Intel’s accelerated NumPy maintain consistent floating-point arithmetic across various accelerators to ensure the portability and robustness of my application?</strong></p>
+<p><strong>A:</strong> When it comes to program GPUs and especially specialized accelerators, the set of supported primitive data types may be limited. For example, certain GPUs may not support double precision or half-precision. Data Parallel Extensions for Python select default dtype depending on device’s default type in accordance with Python Array API Standard. It can be either float64 or float32. It means that unlike traditional Numpy* programming on a CPU, the heterogeneous computing requires careful management of hardware peculiarities to keep the Python script portable and robust on any device. Refer to <a class="reference external" href="https://intelpython.github.io/DPEP/main/programming_dpep.html#writing-robust-numerical-codes-for-heterogeneous-computing">Writing Robust Numerical Codes for Heterogeneous Computing</a> for more details. Also, consider reading scientific papers <a class="reference external" href="https://www.itu.dk/~sestoft/bachelor/IEEE754_article.pdf">Important for understanding how to write robust numerical code</a> and <a class="reference external" href="https://www.intel.com/content/dam/develop/external/us/en/documents/pdf/fp-consistency-121918.pdf">Consistency of Floating-Point Results using the Intel® Compiler or Why doesn’t my application always give the same answer?</a> if you want to learn more on floating point arithmetic basics.</p>
+<p><strong>Q: Does the Intel Distribution for Python help me accelerate Pytorch* or TensorFlow*?</strong></p>
+<p><strong>A:</strong> Consider using <a class="reference external" href="https://www.intel.com/content/www/us/en/developer/tools/oneapi/optimization-for-pytorch.html">PyTorch* Optimizations from Intel</a> and <a class="reference external" href="https://www.intel.com/content/www/us/en/developer/tools/oneapi/optimization-for-tensorflow.html#gs.8ntf1m">TensorFlow* Optimizations from Intel</a> respectively.</p>
+</section>
+</section>
+<section id="performance">
+<h1>Performance<a class="headerlink" href="#performance" title="Link to this heading"></a></h1>
+<p><strong>Q: What optimizations are shipped in Intel Distribution for Python?</strong></p>
+<p><strong>A:</strong> It depends on the package you are using. Intel® oneAPI Math Kernel Library (oneMKL) and Intel® oneAPI Data Analytics Library bring near-native performance through acceleration of core numerical and machine learning packages. Refer to <a class="reference external" href="https://www.researchgate.net/publication/319855745_Accelerating_Scientific_Python_with_Intel_Optimizations">Accelerating Scientific Python with Intel Optimizations</a>. The Intel Distribution for Python is fully optimized for the latest Intel CPUs, ensuring that users can leverage the full potential of the most recent instruction sets and CPU cores.</p>
+<p><strong>Q:  How Intel Distribution for Python support accelerated computing?</strong></p>
+<p><strong>A:</strong> Intel Distribution for Python offers <a class="reference external" href="https://intelpython.github.io/DPEP/main/">Data Parallel Extensions for Python*</a> to enable standards-based accelerated computing on CPUs and GPUs without using low-level proprietary programming API.</p>
+<p><strong>Q: What are Data Parallel Extensions for Python, and how can they benefit my data-intensive applications?</strong></p>
+<p><strong>A:</strong> Data Parallel Extensions for Python* extend numerical Python capabilities beyond CPU and allow even higher performance gains on data parallel devices, such as GPUs. It consists of three foundational packages:</p>
+<ul class="simple">
+<li><p><strong>dpnp - Data Parallel Extension for Numpy*</strong> - a library that implements a subset of Numpy that can be executed on any data parallel device. The subset is a drop-in replacement of core Numpy functions and numerical data types.</p></li>
+<li><p><strong>numba_dpex - Data Parallel Extension for Numba*</strong> - an extension for Numba compiler that lets you program data-parallel devices as you program CPU with Numba.</p></li>
+<li><p><strong>dpctl - Data Parallel Control library</strong> that provides utilities for device selection, allocation of data on devices, tensor data structure along with Python* Array API Standard implementation, and support for creation of user-defined data-parallel extensions.</p></li>
+</ul>
+<p><strong>Q: How much faster is Intel Distribution for Python compared to the standard Python distribution?</strong></p>
+<p><strong>A:</strong> The answer can vary depending on the workload, the libraries used, and the hardware configuration. <a class="reference external" href="https://www.intel.com/content/www/us/en/developer/articles/technical/blazing-fast-python-data-science-ai-performance.html">Deliver Blazing-Fast Python* Data Science and AI Performance on CPUs—with Minimal Code Changes</a> can be a good start. Also, review benchmarking results published at Intel® Distribution for Python* <a class="reference external" href="https://www.intel.com/content/www/us/en/developer/tools/oneapi/distribution-for-python.html#gs.ad8zf4">official website</a>.</p>
+<p><strong>Q: How do I know if my code is running faster with Intel Distribution for Python?</strong></p>
+<p><strong>A:</strong> You can benchmark your code using standard Python profiling tools or by measuring the execution time of your scripts before and after switching to Intel Distribution for Python. We did our own experiments: visit Intel® Distribution for Python* <a class="reference external" href="https://www.intel.com/content/www/us/en/developer/tools/oneapi/distribution-for-python.html#gs.ad8zf4">official website</a> for the latest benchmarking results.</p>
+<p><strong>Q: Will I see performance improvements in all my Python applications with Intel Distribution for Python?</strong></p>
+<p><strong>A:</strong> The performance improvements you see with Intel Distribution for Python will depend on the nature of your Python applications and how they utilize the optimized libraries provided by the distribution. Intel Distribution for Python provides optimized versions of popular libraries such as NumPy, SciPy, and scikit-learn, among others. If your application heavily relies on these libraries for numerical computations, data analysis, or machine learning tasks, you are more likely to see performance gains. We recommend using <a class="reference external" href="https://www.intel.com/content/www/us/en/docs/vtune-profiler/cookbook/2023-1/profiling-machine-learning-applications.html">Intel VTune Profiler for profiling machine learning workloads</a>.</p>
+<p><strong>Q: Is it possible to execute Python code in parallel?</strong></p>
+<p><strong>A:</strong> Yes, in many ways. Intel <strong>NumPy</strong> and <strong>SciPy</strong> are accelerated with an optimized math library such as Intel® oneAPI Math Kernel Library and provide nested parallelism. If you need to use non-standard math, consider trying <strong>Numba</strong> which acts as a “Just-In-Time” (JIT) compiler based on LLVM. It works to close the performance gap between Python and statically typed, compiled languages like C and C++. It also supports multiple threading runtimes, such as Intel® oneAPI Threading Building Blocks (oneTBB), OpenMP*, and work queue. Refer to a <a class="reference external" href="https://www.intel.com/content/www/us/en/developer/articles/technical/easy-guide-to-multithreading-in-python.html">Needle and Thread – An Easy Guide to Multithreading in Python*</a>.</p>
+<p><strong>Q: How can I accelerate Python computations using oneMKL?</strong></p>
+<p><strong>A:</strong> Install Distribution for Python and start using Intel NumPy and SciPy. These libraries utilize oneMKL performance optimizations automatically, so you’ll benefit from faster computations without additional configuration.</p>
+<p><strong>Q: How do libraries optimized by Intel like NumPy and SciPy achieve better performance?</strong></p>
+<p><strong>A:</strong>  They are using oneMKL under the hood. Refer to <a class="reference external" href="https://www.researchgate.net/publication/319855745_Accelerating_Scientific_Python_with_Intel_Optimizations">Accelerating Scientific Python with Intel Optimizations</a> for more details.</p>
+<p><strong>Q: Are there any tips or best practices for achieving maximum performance with Intel Distribution for Python?</strong></p>
+<p><strong>A:</strong> Yes, there are several tips and best practices you can follow to achieve maximum performance with Intel Distribution for Python:</p>
+<ul class="simple">
+<li><p><em>Use Intel-optimized Libraries:</em> Ensure that you are using Intel-optimized versions of libraries such as NumPy, SciPy, and scikit-learn that come with Intel Distribution for Python. These libraries are pre-tuned to take advantage of Intel’s performance enhancements.</p></li>
+<li><p><em>Leverage Multi-threading:</em> Take advantage of the automatic multi-threading capabilities provided by Intel MKL. You can control the number of threads used by MKL with environment variables like MKL_NUM_THREADS to match your system’s CPU core count.</p></li>
+<li><p><em>Profile Your Code:</em> Consider using <a class="reference external" href="https://www.intel.com/content/www/us/en/docs/vtune-profiler/cookbook/2023-1/profiling-machine-learning-applications.html">Intel VTune Profiler for profiling machine learning workloads</a> to identify bottlenecks in your code.</p></li>
+<li><p><em>Keep Libraries Up to Date:</em> Regularly update your Intel Distribution for Python and its libraries to benefit from the latest performance improvements and bug fixes.</p></li>
+</ul>
+<p><strong>Q: Are there any tips or best practices for debugging and tuning performance with Intel Distribution for Python?</strong></p>
+<p><strong>A:</strong> Yes, there are several tips and best practices you can follow to debug performance issues in Python applications:</p>
+<ul class="simple">
+<li><p><em>Python Time Measurements:</em> Start with simple timing using Python’s built-in <strong>timeit</strong> module to measure the execution time of different parts of your code.</p></li>
+<li><p><em>Python Profiling Tools:</em> Learn more about native Python profilers, [cProfile(https://docs.python.org/3/library/profile.html#module-cProfile) and <a class="reference external" href="https://docs.python.org/3/library/profile.html#module-profile">profile</a> in combination with visualization tools like <strong>SnakeViz*</strong> to visualize <strong>cProfile</strong> output.</p></li>
+<li><p><em>Intel Tools:</em> refer to <a class="reference external" href="https://www.intel.com/content/www/us/en/docs/vtune-profiler/cookbook/2023-1/profiling-machine-learning-applications.html">Intel VTune Profiler for profiling machine learning workloads</a> and learn how to identify hotspots, get insights on CPU and Memory utilization, and more. Consider using <a class="reference external" href="https://www.intel.com/content/www/us/en/docs/advisor/user-guide/2024-1/profile-python.html">Intel® Advisor</a> to profile loops in your application and understand where your code may benefit from parallel execution.</p></li>
+<li><p><em>Review I\O Operations:</em> If your application reads from or writes to disk or intensively uses network, I/O might be a bottleneck. Use tools like <strong>strace*</strong> to monitor and analyze I/O patterns.</p></li>
+</ul>
+<p><strong>Q: Are there benchmarks for Intel® Extension for Scikit-learn*?</strong></p>
+<p><strong>A:</strong> Visit Intel® Distribution for Python* <a class="reference external" href="https://www.intel.com/content/www/us/en/developer/tools/oneapi/distribution-for-python.html#gs.ad8zf4">official website</a> for the latest benchmarking results. In addition, look at <a class="reference external" href="https://intel.github.io/scikit-learn-intelex/latest/acceleration.html">Intel(R) Extension for Scikit-learn* Github &gt; Acceleration</a> page.</p>
+<p><strong>Q: What has Intel done to speed up XGBoost?</strong></p>
+<p><strong>A:</strong> A lot of optimizations speed up XGboost, like automatic memory prefetching, reduced memory consumption, and parallelization. XGboost supports single node and distributed training. For in-depth explanations, turn to <a class="reference external" href="https://www.intel.com/content/www/us/en/developer/articles/technical/easy-introduction-xgboost-for-intel-architecture.html">An Easy Introduction to XGBoost: A Comprehensive Guide to the Library and Intel Optimizations</a>. See the Intel® Optimization for XGBoost* <a class="reference external" href="https://www.intel.com/content/www/us/en/developer/tools/oneapi/optimization-for-xgboost.html">official website</a>  for the benchmarks.</p>
+<p><strong>Q: What should I do if I don’t see the expected performance improvements with Intel Distribution for Python?</strong></p>
+<p><strong>A:</strong> Consider reading <a class="reference external" href="https://www.intel.com/content/www/us/en/docs/vtune-profiler/cookbook/2023-1/profiling-machine-learning-applications.html">Intel VTune Profiler for profiling machine learning workloads</a> to identify bottlenecks in your code. Should profiling fail to shed light on the performance bottlenecks you’re encountering, we encourage you to seek assistance through our support forums. For more immediate and in-depth assistance, consider contacting Priority Support via <a class="reference external" href="https://www.intel.com/content/www/us/en/developer/get-help/priority-support.html">Online Service Center</a>.</p>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="getting_started.html" class="btn btn-neutral float-left" title="Get Started with the Intel® Distribution for Python*" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2024, SR.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>
