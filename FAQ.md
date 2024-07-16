@@ -4,7 +4,7 @@ This document provides essential information on installation, key features, comp
 
 To learn what's new in the latest release, refer to [Release notes](https://github.com/raistefintel/raistefintel.github.io/blob/main/release_notes.md).
  
-## Navigation
+## Topics
 - [General Questions](#general-questions)
 - [System Requirements](#system-requirements)
 - [Licensing, Installation, Updates](#licensing-installation-updates)
