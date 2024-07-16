@@ -13,7 +13,11 @@ Welcome to Intel® Distribution for Python*'s documentation!
    system_requirements
    getting_started
    whats_included
-   release_notes
+   releases
+   dpep
+   dpnp
+   dpctl
+   numba_dpex
    FAQ
 
 
