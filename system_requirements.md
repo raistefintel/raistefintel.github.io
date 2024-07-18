@@ -1,15 +1,13 @@
-# Introduction
+# System requirements
 This document provides details about hardware, operating system, and software prerequisites for the [Intel® Distribution for Python*](https://www.intel.com/content/www/us/en/developer/tools/oneapi/distribution-for-python.html).
 
 Release notes can be found in a [dedicated article.](https://github.com/raistefintel/raistefintel.github.io/blob/main/release_notes.md)
 
 
-# Supported Host Operating Systems
+## Supported Host Operating Systems
 These OS distributions are tested by Intel or known to work; other distributions may or may not work and are not recommended. If you have questions, access the [Intel Community Forums](https://community.intel.com/t5/Developer-Software-Forums/ct-p/developer-software-forums) when you need assistance.
 
 If you have [Commercial Support](https://supporttickets.intel.com/s/?language=en_US), create a support ticket.
-
-## Operating systems:
 
 Note: These OS distributions are tested by Intel or known to work; other distributions may or may not work and are not recommended. If you have questions, access the [Intel Community Forums](https://community.intel.com/t5/Developer-Software-Forums/ct-p/developer-software-forums) when you need assistance.  If you have [Commercial Support](https://supporttickets.intel.com/s/?language=en_US), create a support ticket.
 
@@ -17,13 +15,13 @@ Note: These OS distributions are tested by Intel or known to work; other distrib
 - Windows® 10
 - Windows® 11
  
-# Supported Target Hardware Platforms
+## Supported Target Hardware Platforms
 
-## CPUs:
+### CPUs
 - Intel® Core™ processor family
 - Intel® Xeon® processor family
 
-## GPUs:
+### GPUs
 - Intel® UHD Graphics for 11th generation Intel processors or newer
 - Intel® Iris® Xᵉ graphics
 - Intel® Arc™ graphics
@@ -31,12 +29,12 @@ Note: These OS distributions are tested by Intel or known to work; other distrib
 - Intel® Data Center GPU Max Series
 
 
-# Software Requirements
+## Software Requirements
 
-### Language: 
+### Python versions supported 
 - Python 3.9, Python 3.10
 
-### Package management:
+### Package management
 - conda*
 - pip
 
@@ -53,7 +51,7 @@ Note: These OS distributions are tested by Intel or known to work; other distrib
 
 
 
-# Development Environment
+## Development Environment
 
 **Compatible with**:
 - Microsoft Visual Studio*
