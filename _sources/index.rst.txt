@@ -15,9 +15,6 @@ Welcome to Intel® Distribution for Python*'s documentation!
    whats_included
    releases
    dpep
-   dpnp
-   dpctl
-   numba_dpex
    FAQ
 
 

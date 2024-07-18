@@ -4,7 +4,7 @@
   <meta charset="utf-8" /><meta name="generator" content="Docutils 0.19: https://docutils.sourceforge.io/" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Introduction &mdash; Intel Distribution for Python 0.1 documentation</title>
+  <title>System requirements &mdash; Intel Distribution for Python 0.1 documentation</title>
       <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=80d5e7a1" />
       <link rel="stylesheet" type="text/css" href="_static/css/theme.css?v=19f00094" />
 
@@ -21,7 +21,7 @@
     <script src="_static/js/theme.js"></script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="Get Started with the Intel® Distribution for Python*" href="getting_started.html" />
+    <link rel="next" title="Get Started" href="getting_started.html" />
     <link rel="prev" title="Welcome to the Intel® Distribution for Python* documentation" href="intro.html" /> 
 </head>
 
@@ -46,29 +46,31 @@
         </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
               <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="intro.html">Welcome to the Intel® Distribution for Python* documentation</a></li>
-<li class="toctree-l1 current"><a class="current reference internal" href="#">Introduction</a></li>
-<li class="toctree-l1"><a class="reference internal" href="#supported-host-operating-systems">Supported Host Operating Systems</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="#operating-systems">Operating systems:</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">System requirements</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#supported-host-operating-systems">Supported Host Operating Systems</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#supported-target-hardware-platforms">Supported Target Hardware Platforms</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#cpus">CPUs</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#gpus">GPUs</a></li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="#supported-target-hardware-platforms">Supported Target Hardware Platforms</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="#cpus">CPUs:</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#gpus">GPUs:</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#software-requirements">Software Requirements</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#python-versions-supported">Python versions supported</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#package-management">Package management</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#for-linux-users">For Linux users</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#for-windows-users">For Windows users</a></li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="#software-requirements">Software Requirements</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="#language">Language:</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#package-management">Package management:</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#for-linux-users">For Linux users</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#for-windows-users">For Windows users</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#development-environment">Development Environment</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#notices-and-disclaimers">Notices and Disclaimers</a></li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="#development-environment">Development Environment</a></li>
-<li class="toctree-l1"><a class="reference internal" href="#notices-and-disclaimers">Notices and Disclaimers</a></li>
-<li class="toctree-l1"><a class="reference internal" href="getting_started.html">Get Started with the Intel® Distribution for Python*</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="getting_started.html">Get Started</a></li>
 <li class="toctree-l1"><a class="reference internal" href="whats_included.html">What’s included</a></li>
 <li class="toctree-l1"><a class="reference internal" href="releases.html">Releases</a></li>
-<li class="toctree-l1"><a class="reference internal" href="FAQ.html">Frequently Asked Questions (FAQ) about Intel® Distribution for Python*</a></li>
+<li class="toctree-l1"><a class="reference internal" href="dpep.html">Data Parallel Extensions for Python*</a></li>
+<li class="toctree-l1"><a class="reference internal" href="FAQ.html">Frequently Asked Questions (FAQ)</a></li>
 </ul>
 
         </div>
@@ -85,7 +87,7 @@
           <div role="navigation" aria-label="Page navigation">
   <ul class="wy-breadcrumbs">
       <li><a href="index.html" class="icon icon-home" aria-label="Home"></a></li>
-      <li class="breadcrumb-item active">Introduction</li>
+      <li class="breadcrumb-item active">System requirements</li>
       <li class="wy-breadcrumbs-aside">
             <a href="_sources/system_requirements.md.txt" rel="nofollow"> View page source</a>
       </li>
@@ -95,17 +97,14 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
              
-  <section id="introduction">
-<h1>Introduction<a class="headerlink" href="#introduction" title="Link to this heading"></a></h1>
+  <section id="system-requirements">
+<h1>System requirements<a class="headerlink" href="#system-requirements" title="Link to this heading"></a></h1>
 <p>This document provides details about hardware, operating system, and software prerequisites for the <a class="reference external" href="https://www.intel.com/content/www/us/en/developer/tools/oneapi/distribution-for-python.html">Intel® Distribution for Python*</a>.</p>
 <p>Release notes can be found in a <a class="reference external" href="https://github.com/raistefintel/raistefintel.github.io/blob/main/release_notes.md">dedicated article.</a></p>
-</section>
 <section id="supported-host-operating-systems">
-<h1>Supported Host Operating Systems<a class="headerlink" href="#supported-host-operating-systems" title="Link to this heading"></a></h1>
+<h2>Supported Host Operating Systems<a class="headerlink" href="#supported-host-operating-systems" title="Link to this heading"></a></h2>
 <p>These OS distributions are tested by Intel or known to work; other distributions may or may not work and are not recommended. If you have questions, access the <a class="reference external" href="https://community.intel.com/t5/Developer-Software-Forums/ct-p/developer-software-forums">Intel Community Forums</a> when you need assistance.</p>
 <p>If you have <a class="reference external" href="https://supporttickets.intel.com/s/?language=en_US">Commercial Support</a>, create a support ticket.</p>
-<section id="operating-systems">
-<h2>Operating systems:<a class="headerlink" href="#operating-systems" title="Link to this heading"></a></h2>
 <p>Note: These OS distributions are tested by Intel or known to work; other distributions may or may not work and are not recommended. If you have questions, access the <a class="reference external" href="https://community.intel.com/t5/Developer-Software-Forums/ct-p/developer-software-forums">Intel Community Forums</a> when you need assistance.  If you have <a class="reference external" href="https://supporttickets.intel.com/s/?language=en_US">Commercial Support</a>, create a support ticket.</p>
 <ul class="simple">
 <li><p>Linux*</p></li>
@@ -113,18 +112,17 @@
 <li><p>Windows® 11</p></li>
 </ul>
 </section>
-</section>
 <section id="supported-target-hardware-platforms">
-<h1>Supported Target Hardware Platforms<a class="headerlink" href="#supported-target-hardware-platforms" title="Link to this heading"></a></h1>
+<h2>Supported Target Hardware Platforms<a class="headerlink" href="#supported-target-hardware-platforms" title="Link to this heading"></a></h2>
 <section id="cpus">
-<h2>CPUs:<a class="headerlink" href="#cpus" title="Link to this heading"></a></h2>
+<h3>CPUs<a class="headerlink" href="#cpus" title="Link to this heading"></a></h3>
 <ul class="simple">
 <li><p>Intel® Core™ processor family</p></li>
 <li><p>Intel® Xeon® processor family</p></li>
 </ul>
 </section>
 <section id="gpus">
-<h2>GPUs:<a class="headerlink" href="#gpus" title="Link to this heading"></a></h2>
+<h3>GPUs<a class="headerlink" href="#gpus" title="Link to this heading"></a></h3>
 <ul class="simple">
 <li><p>Intel® UHD Graphics for 11th generation Intel processors or newer</p></li>
 <li><p>Intel® Iris® Xᵉ graphics</p></li>
@@ -135,22 +133,22 @@
 </section>
 </section>
 <section id="software-requirements">
-<h1>Software Requirements<a class="headerlink" href="#software-requirements" title="Link to this heading"></a></h1>
-<section id="language">
-<h2>Language:<a class="headerlink" href="#language" title="Link to this heading"></a></h2>
+<h2>Software Requirements<a class="headerlink" href="#software-requirements" title="Link to this heading"></a></h2>
+<section id="python-versions-supported">
+<h3>Python versions supported<a class="headerlink" href="#python-versions-supported" title="Link to this heading"></a></h3>
 <ul class="simple">
 <li><p>Python 3.9, Python 3.10</p></li>
 </ul>
 </section>
 <section id="package-management">
-<h2>Package management:<a class="headerlink" href="#package-management" title="Link to this heading"></a></h2>
+<h3>Package management<a class="headerlink" href="#package-management" title="Link to this heading"></a></h3>
 <ul class="simple">
 <li><p>conda*</p></li>
 <li><p>pip</p></li>
 </ul>
 </section>
 <section id="for-linux-users">
-<h2>For Linux users<a class="headerlink" href="#for-linux-users" title="Link to this heading"></a></h2>
+<h3>For Linux users<a class="headerlink" href="#for-linux-users" title="Link to this heading"></a></h3>
 <ul class="simple">
 <li><p>The driver packages needed on Linux are described in the
 <a class="reference external" href="https://dgpu-docs.intel.com/driver/installation.html">Data Center GPU Series Driver Installation</a> and
@@ -158,7 +156,7 @@
 </ul>
 </section>
 <section id="for-windows-users">
-<h2>For Windows users<a class="headerlink" href="#for-windows-users" title="Link to this heading"></a></h2>
+<h3>For Windows users<a class="headerlink" href="#for-windows-users" title="Link to this heading"></a></h3>
 <ul class="simple">
 <li><p>For GPU development, the latest GPU drivers need to be installed. This can be
 downloaded from <a class="reference external" href="https://www.intel.com/content/www/us/en/download/785597/intel-arc-iris-xe-graphics-windows.html">Intel® Arc™ &amp; Iris® Xe Graphics - Windows*</a>.</p>
@@ -170,15 +168,14 @@ downloaded from <a class="reference external" href="https://www.intel.com/conten
 </section>
 </section>
 <section id="development-environment">
-<h1>Development Environment<a class="headerlink" href="#development-environment" title="Link to this heading"></a></h1>
+<h2>Development Environment<a class="headerlink" href="#development-environment" title="Link to this heading"></a></h2>
 <p><strong>Compatible with</strong>:</p>
 <ul class="simple">
 <li><p>Microsoft Visual Studio*</p></li>
 <li><p>PyCharm*</p></li>
 </ul>
-</section>
 <section id="notices-and-disclaimers">
-<h1>Notices and Disclaimers<a class="headerlink" href="#notices-and-disclaimers" title="Link to this heading"></a></h1>
+<h3>Notices and Disclaimers<a class="headerlink" href="#notices-and-disclaimers" title="Link to this heading"></a></h3>
 <p>Intel technologies may require enabled hardware, software or service activation.</p>
 <p>No product or component can be absolutely secure.</p>
 <p>Your costs and results may vary.</p>
@@ -187,19 +184,21 @@ downloaded from <a class="reference external" href="https://www.intel.com/conten
 <p>The products described may contain design defects or errors known as errata which may cause the product to deviate from published specifications. Current characterized errata are available on request.</p>
 <p>Intel disclaims all express and implied warranties, including without limitation, the implied warranties of merchantability, fitness for a particular purpose, and non-infringement, as well as any warranty arising from course of performance, course of dealing, or usage in trade.</p>
 </section>
+</section>
+</section>
 
 
            </div>
           </div>
           <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
         <a href="intro.html" class="btn btn-neutral float-left" title="Welcome to the Intel® Distribution for Python* documentation" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
-        <a href="getting_started.html" class="btn btn-neutral float-right" title="Get Started with the Intel® Distribution for Python*" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="getting_started.html" class="btn btn-neutral float-right" title="Get Started" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
     </div>
 
   <hr/>
 
   <div role="contentinfo">
-    <p>&#169; Copyright 2024, SR.</p>
+    <p>&#169; Copyright 2024, Intel(R).</p>
   </div>
 
   Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a

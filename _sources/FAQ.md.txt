@@ -1,4 +1,4 @@
-# Frequently Asked Questions (FAQ) about Intel® Distribution for Python\*
+# Frequently Asked Questions (FAQ)
 
 This document provides essential information on installation, key features, compatibility, and support for Intel® Distribution for Python*. 
 
