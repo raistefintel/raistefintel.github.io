@@ -57,7 +57,7 @@ Note: These OS distributions are tested by Intel or known to work; other distrib
 - Microsoft Visual Studio*
 - PyCharm*
 
-# Notices and Disclaimers
+#### Notices and Disclaimers
 Intel technologies may require enabled hardware, software or service activation.
 
 No product or component can be absolutely secure.
