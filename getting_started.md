@@ -1,4 +1,4 @@
-# Get Started with the Intel® Distribution for Python\*
+# Get Started 
 The Intel® Distribution for Python\* is a cluster of packages including NumPy, SciPy, scikit-learn, XGBoost and Data Parallel Extensions for Python*. It contains packages that are optimized via the Intel® oneAPI Math Kernel Library (oneMKL) and the Intel® oneAPI Data Analytics Library (oneDAL) to make Python\* application more efficient.
 
 ## Supported Installation Options
