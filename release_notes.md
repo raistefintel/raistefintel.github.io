@@ -1,4 +1,4 @@
-# Overview
+# Release Notes
 
 This page provides the current Release Notes for the Intel® Distribution for Python\*. The notes are categorized by year, from newest to oldest, with individual releases listed within each year.
 
@@ -7,7 +7,7 @@ All files are in PDF format - [Adobe Reader\*](https://get.adobe.com/reader/) (o
 For information on known issues, see [Intel® Distribution for Python\* Known Issues.](https://www.intel.com/content/www/us/en/developer/articles/troubleshooting/python-known-issues.html)
 For questions or technical support, visit [Intel® Distribution for Python\* Support Forum.](https://community.intel.com/t5/Intel-Distribution-for-Python/bd-p/distribution-python)
 
-## Navigation
+#### Navigation
 - [2024](#2024)
 	- [Known Issues](#known-issues)
 	- [Deprecation Notices](#deprecation-notices)
@@ -483,7 +483,7 @@ Intel® oneAPI 2022.3 is validated on Windows and Linux.
 - Note: The deep learning packages and computer vision packages along with their dependencies will not be included in Intel Distribution for Python, henceforth. However, the packages continue to be available in anaconda/Intel conda channel. Click on the [What's Included in the Intel® Distribution for Python\*](https://www.intel.com/content/www/us/en/developer/articles/tool/whats-included-distribution-for-python.html) to learn more.
 </details> 
 
-# Notices and Disclaimers
+#### Notices and Disclaimers
 Intel technologies may require enabled hardware, software or service activation.
 
 No product or component can be absolutely secure.
