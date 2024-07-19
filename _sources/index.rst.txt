@@ -13,7 +13,8 @@ Welcome to Intel® Distribution for Python*'s documentation!
    system_requirements
    getting_started
    whats_included
-   releases
+   performance
+   release_notes
    dpep
    FAQ
 

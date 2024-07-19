@@ -1,4 +1,4 @@
-# Welcome to the Intel® Distribution for Python* documentation
+# Introduction
 
 The Intel® Distribution for Python* provides:
 

@@ -1,0 +1,756 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" data-content_root="./">
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.19: https://docutils.sourceforge.io/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Release Notes &mdash; Intel Distribution for Python 0.1 documentation</title>
+      <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=80d5e7a1" />
+      <link rel="stylesheet" type="text/css" href="_static/css/theme.css?v=19f00094" />
+
+  
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script src="_static/jquery.js?v=5d32c60e"></script>
+        <script src="_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+        <script src="_static/documentation_options.js?v=2709fde1"></script>
+        <script src="_static/doctools.js?v=9a2dae69"></script>
+        <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Data Parallel Extensions for Python*" href="dpep.html" />
+    <link rel="prev" title="Performance" href="performance.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="index.html" class="icon icon-home">
+            Intel Distribution for Python
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="intro.html">Introduction</a></li>
+<li class="toctree-l1"><a class="reference internal" href="system_requirements.html">System requirements</a></li>
+<li class="toctree-l1"><a class="reference internal" href="getting_started.html">Get Started</a></li>
+<li class="toctree-l1"><a class="reference internal" href="whats_included.html">What’s included</a></li>
+<li class="toctree-l1"><a class="reference internal" href="performance.html">Performance</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Release Notes</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#navigation">Navigation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id1">2024</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#id2">2024.2</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id3">2024.1</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id4">2024.0</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#known-issues">Known Issues</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#deprecation-notices">Deprecation Notices</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#deprecation-notice-for-python-3-8">Deprecation Notice for Python* 3.8</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#deprecation-of-intel-distribution-for-python-for-macos">Deprecation of Intel® Distribution for Python* for macOS*</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#deprecation-of-intel-extension-for-scikit-learn-for-macos">Deprecation of Intel® Extension for Scikit-Learn* for macOS*</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="#previous-releases">Previous Releases</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#id5">2023</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#id6">2023.2</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id7">2023.1</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id8">2023.0</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#id9">2022</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#intel-oneapi-2022-3-1">Intel® oneAPI 2022.3.1</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#intel-oneapi-2022-3">Intel® oneAPI 2022.3</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#intel-oneapi-2022-2">Intel® oneAPI 2022.2</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#intel-oneapi-2022-1">Intel® oneAPI 2022.1</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#id10">2021</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#intel-oneapi-2021-4">Intel® oneAPI 2021.4</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#intel-oneapi-2021-3">Intel® oneAPI 2021.3</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#intel-oneapi-2021-2">Intel® oneAPI 2021.2</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#intel-oneapi-2021-1">Intel® oneAPI 2021.1</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#id11">2020</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#update-4">Update 4</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#update-2">Update 2</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#update-1">Update 1</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#gold">2020 Gold</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#id12">2019</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#update-5">Update 5</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id13">Update 4</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#update-3">Update 3</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id14">Update 2</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id15">Update 1</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#initial-release">Initial Release</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#notices-and-disclaimers">Notices and Disclaimers</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="dpep.html">Data Parallel Extensions for Python*</a></li>
+<li class="toctree-l1"><a class="reference internal" href="FAQ.html">Frequently Asked Questions (FAQ)</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">Intel Distribution for Python</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="index.html" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active">Release Notes</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="_sources/release_notes.md.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="release-notes">
+<h1>Release Notes<a class="headerlink" href="#release-notes" title="Link to this heading"></a></h1>
+<p>This page provides the current Release Notes for the Intel® Distribution for Python*. The notes are categorized by year, from newest to oldest, with individual releases listed within each year.</p>
+<p>All files are in PDF format - <a class="reference external" href="https://get.adobe.com/reader/">Adobe Reader*</a> (or compatible) required.</p>
+<p>For information on known issues, see <a class="reference external" href="https://www.intel.com/content/www/us/en/developer/articles/troubleshooting/python-known-issues.html">Intel® Distribution for Python* Known Issues.</a>
+For questions or technical support, visit <a class="reference external" href="https://community.intel.com/t5/Intel-Distribution-for-Python/bd-p/distribution-python">Intel® Distribution for Python* Support Forum.</a></p>
+<section id="navigation">
+<h2>Navigation<a class="headerlink" href="#navigation" title="Link to this heading"></a></h2>
+<ul class="simple">
+<li><p><a class="reference internal" href="#2024"><span class="xref myst">2024</span></a></p>
+<ul>
+<li><p><a class="reference internal" href="#known-issues"><span class="xref myst">Known Issues</span></a></p></li>
+<li><p><a class="reference internal" href="#deprecation-notices"><span class="xref myst">Deprecation Notices</span></a></p></li>
+</ul>
+</li>
+<li><p><a class="reference internal" href="#previous-releases"><span class="xref myst">Previous releases</span></a></p>
+<ul>
+<li><p><a class="reference internal" href="#2023"><span class="xref myst">2023</span></a></p></li>
+<li><p><a class="reference internal" href="#2022"><span class="xref myst">2022</span></a></p></li>
+<li><p><a class="reference internal" href="#2021"><span class="xref myst">2021</span></a></p></li>
+<li><p><a class="reference internal" href="#2020"><span class="xref myst">2020</span></a></p></li>
+<li><p><a class="reference internal" href="#2019"><span class="xref myst">2019</span></a></p></li>
+</ul>
+</li>
+</ul>
+</section>
+<section id="id1">
+<h2>2024<a class="headerlink" href="#id1" title="Link to this heading"></a></h2>
+<section id="id2">
+<h3>2024.2<a class="headerlink" href="#id2" title="Link to this heading"></a></h3>
+<details open> 
+	 <summary><b>Expand</b></summary>
+<p><a class="reference external" href="https://cdrdv2.intel.com/v1/dl/getContent/825850">Release Notes</a></p>
+<p><strong>What’s New:</strong></p>
+<p>The Intel® Distribution for Python, 2024.2 has been updated to include functional and security updates. Users should update to the latest version.</p>
+<p>The Intel® Distribution for Python* added the following features:</p>
+<ul class="simple">
+<li><p>Integrated libmamba solver to conda for concurrent package resolution.</p></li>
+<li><p>Version updates of conda packages.</p></li>
+<li><p>The Data Parallel Control Library added the following features:</p>
+<ul>
+<li><p>It offers improved productivity with new sorting and summing functions (<code class="docutils literal notranslate"><span class="pre">dpt.searchsorted</span></code>, <code class="docutils literal notranslate"><span class="pre">dpt.cumulative_sum</span></code>, <code class="docutils literal notranslate"><span class="pre">dpt.cumulatove_prod</span></code>, <code class="docutils literal notranslate"><span class="pre">dpt.cumulative_logsumexp</span></code>).</p></li>
+<li><p>Added support for the out keyword argument.</p></li>
+<li><p>Correspondence of tensor functions signatures to array API (keyword-only argument can’t be provided as positional argument).</p></li>
+<li><p>Updated documentation and bug fixes.</p></li>
+</ul>
+</li>
+<li><p>The Data Parallel Extension for NumPy added the following features:</p>
+<ul>
+<li><p>Increased productivity with the addition of a new family of cumulative functions and closed functional gaps in the linalg routine.</p></li>
+<li><p>DPNP is now 100% functional in npbench benchmarks.</p></li>
+<li><p>Implemented a family of cumulative functions. Full list of mathematical functions supported is available at <a class="reference external" href="https://intelpython.github.io/dpnp/reference/math.html">Mathematical Functions — Data Parallel Extension for NumPy documentation.</a></p></li>
+</ul>
+</li>
+</ul>
+</details>
+</section>
+<section id="id3">
+<h3>2024.1<a class="headerlink" href="#id3" title="Link to this heading"></a></h3>
+<details>
+  <summary><b>Expand</b></summary>
+<p><a class="reference external" href="https://www.intel.com/content/www/us/en/content-details/818309/intel-distribution-for-python-2024-1-release-notes.html">Release Notes</a></p>
+<p><strong>What’s New:</strong></p>
+<p>The following are new features for the release:</p>
+<ul class="simple">
+<li><p>Significant improvements for <strong>Data Parallel Extensions for Python</strong></p>
+<ul>
+<li><p><strong>Data Parallel Controls</strong> - <code class="docutils literal notranslate"><span class="pre">dpctl</span></code></p>
+<ul>
+<li><p>The library is now <strong>100% conformant with core Python Array API 2022.12 spec</strong></p></li>
+<li><p>The following <strong>new features</strong> added:</p>
+<ul>
+<li><p>Reduction Functions: <code class="docutils literal notranslate"><span class="pre">min</span></code>, <code class="docutils literal notranslate"><span class="pre">max</span></code>, <code class="docutils literal notranslate"><span class="pre">prod</span></code>, <code class="docutils literal notranslate"><span class="pre">logsumexp</span></code>, <code class="docutils literal notranslate"><span class="pre">reduce_hypot</span></code></p></li>
+<li><p>Statistical Functions: <code class="docutils literal notranslate"><span class="pre">mean</span></code>, <code class="docutils literal notranslate"><span class="pre">std</span></code>, <code class="docutils literal notranslate"><span class="pre">var</span></code></p></li>
+<li><p>Sorting Functions: <code class="docutils literal notranslate"><span class="pre">sort</span></code>, <code class="docutils literal notranslate"><span class="pre">argsort</span></code></p></li>
+<li><p>Set Functions: <code class="docutils literal notranslate"><span class="pre">unique_values</span></code>, <code class="docutils literal notranslate"><span class="pre">unique_counts</span></code>, <code class="docutils literal notranslate"><span class="pre">unique_inverse</span></code>, <code class="docutils literal notranslate"><span class="pre">unique_all</span></code></p></li>
+<li><p>Elementwise Functions: <code class="docutils literal notranslate"><span class="pre">clip</span></code>, <code class="docutils literal notranslate"><span class="pre">cbrt</span></code>, <code class="docutils literal notranslate"><span class="pre">rsqrt</span></code>, <code class="docutils literal notranslate"><span class="pre">exp2</span></code>, <code class="docutils literal notranslate"><span class="pre">copysign</span></code>, <code class="docutils literal notranslate"><span class="pre">reciprocal</span></code></p></li>
+<li><p>Linear Algebra Functions: <code class="docutils literal notranslate"><span class="pre">matmul</span></code>, <code class="docutils literal notranslate"><span class="pre">vecdot</span></code>, <code class="docutils literal notranslate"><span class="pre">tensordot</span></code></p></li>
+<li><p>In-Place Elementwise Operations:</p></li>
+<li><p>Dedicated support for in-place Python operators (+=, -=, *=, /=, ^=, &amp;&amp;=, ||=, ^^=, &lt;&lt;=, &gt;&gt;=, %=) on <code class="docutils literal notranslate"><span class="pre">usm_ndarray</span></code> Python type</p></li>
+</ul>
+</li>
+<li><p><strong>Performance enhancements</strong> and <strong>bug fixes</strong></p>
+<ul>
+<li><p>The library now supports <em><em>NVidia</em> devices</em>*. Follow <a class="reference external" href="https://github.com/IntelPython/dpctl/discussions/1124">GitHub instructions</a> how to compile dpctl for CUDA devices.</p></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p><strong>Data Parallel Extension for NumPy*</strong> -<code class="docutils literal notranslate"><span class="pre">dpnp</span></code></p>
+<ul>
+<li><p><strong>New features</strong> added:</p>
+<ul>
+<li><p>Linear Algebra Functions: <code class="docutils literal notranslate"><span class="pre">slogdet</span></code>, <code class="docutils literal notranslate"><span class="pre">solve</span></code></p></li>
+<li><p>Manipulation Functions: <code class="docutils literal notranslate"><span class="pre">broadcase_arrays</span></code>, <code class="docutils literal notranslate"><span class="pre">can_cast</span></code>, <code class="docutils literal notranslate"><span class="pre">column_stack</span></code>, <code class="docutils literal notranslate"><span class="pre">row_stack</span></code>, <code class="docutils literal notranslate"><span class="pre">dstack</span></code>, <code class="docutils literal notranslate"><span class="pre">vstack</span></code>, <code class="docutils literal notranslate"><span class="pre">tile</span></code></p></li>
+<li><p>Mathematical Functions: <code class="docutils literal notranslate"><span class="pre">clip</span></code>, <code class="docutils literal notranslate"><span class="pre">logaddexp</span></code>, <code class="docutils literal notranslate"><span class="pre">logsumexp</span></code>, <code class="docutils literal notranslate"><span class="pre">positive</span></code>, <code class="docutils literal notranslate"><span class="pre">reduce_hypot</span></code></p></li>
+<li><p>Statistical Functions: <code class="docutils literal notranslate"><span class="pre">nanargmax</span></code>, <code class="docutils literal notranslate"><span class="pre">nanargmin</span></code>, <code class="docutils literal notranslate"><span class="pre">nanmax</span></code>, <code class="docutils literal notranslate"><span class="pre">nanmin</span></code>, <code class="docutils literal notranslate"><span class="pre">nanmean</span></code>, nanstd, <code class="docutils literal notranslate"><span class="pre">nanvar</span></code></p></li>
+<li><p>Type Relating Functions: <code class="docutils literal notranslate"><span class="pre">finfo</span></code>, <code class="docutils literal notranslate"><span class="pre">iinfo</span></code></p></li>
+</ul>
+</li>
+<li><p><strong>Extended support for keyword arguments:</strong></p>
+<ul>
+<li><p>Array Creation Functions: <code class="docutils literal notranslate"><span class="pre">diag</span></code>, <code class="docutils literal notranslate"><span class="pre">diagflat</span></code>, <code class="docutils literal notranslate"><span class="pre">geomspace</span></code>, <code class="docutils literal notranslate"><span class="pre">linspace</span></code>, <code class="docutils literal notranslate"><span class="pre">logspace</span></code>, <code class="docutils literal notranslate"><span class="pre">identity</span></code>, <code class="docutils literal notranslate"><span class="pre">tril</span></code>, <code class="docutils literal notranslate"><span class="pre">vander</span></code></p></li>
+<li><p>Counting Functions: <code class="docutils literal notranslate"><span class="pre">count_nonzero</span></code></p></li>
+<li><p>Indexing Functions: <code class="docutils literal notranslate"><span class="pre">indices</span></code>, <code class="docutils literal notranslate"><span class="pre">put_along_axis</span></code>, <code class="docutils literal notranslate"><span class="pre">take_along_axis</span></code></p></li>
+<li><p>Linear Algebra Functions: <code class="docutils literal notranslate"><span class="pre">cholesky</span></code>, <code class="docutils literal notranslate"><span class="pre">det</span></code>, <code class="docutils literal notranslate"><span class="pre">dot</span></code>, <code class="docutils literal notranslate"><span class="pre">inv</span></code>, <code class="docutils literal notranslate"><span class="pre">matmul</span></code>, <code class="docutils literal notranslate"><span class="pre">qr</span></code>, <code class="docutils literal notranslate"><span class="pre">svd</span></code></p></li>
+<li><p>Manipulation Functions: <code class="docutils literal notranslate"><span class="pre">atleast_1d</span></code>, <code class="docutils literal notranslate"><span class="pre">atleast_2d</span></code>, <code class="docutils literal notranslate"><span class="pre">atleast_3d</span></code>, <code class="docutils literal notranslate"><span class="pre">astype</span></code>, <code class="docutils literal notranslate"><span class="pre">concatenate</span></code>, <code class="docutils literal notranslate"><span class="pre">stack</span></code>, <code class="docutils literal notranslate"><span class="pre">ravel</span></code>, <code class="docutils literal notranslate"><span class="pre">repeat</span></code></p></li>
+<li><p>Mathematical Functions: <code class="docutils literal notranslate"><span class="pre">absolute</span></code>, <code class="docutils literal notranslate"><span class="pre">abs</span></code>, <code class="docutils literal notranslate"><span class="pre">angle</span></code>, <code class="docutils literal notranslate"><span class="pre">reciprocal</span></code>, <code class="docutils literal notranslate"><span class="pre">cbrt</span></code>, <code class="docutils literal notranslate"><span class="pre">rsqrt</span></code>, <code class="docutils literal notranslate"><span class="pre">copysign</span></code>, <code class="docutils literal notranslate"><span class="pre">diff</span></code>, <code class="docutils literal notranslate"><span class="pre">exp</span></code>, <code class="docutils literal notranslate"><span class="pre">exp2</span></code>, <code class="docutils literal notranslate"><span class="pre">expm1</span></code>, <code class="docutils literal notranslate"><span class="pre">fmax</span></code>, <code class="docutils literal notranslate"><span class="pre">fmin</span></code>, <code class="docutils literal notranslate"><span class="pre">maximum</span></code>, <code class="docutils literal notranslate"><span class="pre">minimum</span></code>, <code class="docutils literal notranslate"><span class="pre">hypot</span></code>, <code class="docutils literal notranslate"><span class="pre">log10</span></code>, <code class="docutils literal notranslate"><span class="pre">log1p</span></code>, <code class="docutils literal notranslate"><span class="pre">log2</span></code>, <code class="docutils literal notranslate"><span class="pre">prod</span></code>, <code class="docutils literal notranslate"><span class="pre">nanprod</span></code></p></li>
+<li><p>Searching Functions: <code class="docutils literal notranslate"><span class="pre">argmax</span></code>, <code class="docutils literal notranslate"><span class="pre">argmin</span></code></p></li>
+<li><p>Sorting Functions: <code class="docutils literal notranslate"><span class="pre">argsort</span></code>, <code class="docutils literal notranslate"><span class="pre">sort</span></code></p></li>
+<li><p>Statistical Functions**: <code class="docutils literal notranslate"><span class="pre">average</span></code>, <code class="docutils literal notranslate"><span class="pre">max</span></code>, <code class="docutils literal notranslate"><span class="pre">min</span></code>, <code class="docutils literal notranslate"><span class="pre">amax</span></code>, <code class="docutils literal notranslate"><span class="pre">amin</span></code>, <code class="docutils literal notranslate"><span class="pre">mean</span></code>, <code class="docutils literal notranslate"><span class="pre">nansum</span></code>, <code class="docutils literal notranslate"><span class="pre">ptp</span></code>, <code class="docutils literal notranslate"><span class="pre">std</span></code>, <code class="docutils literal notranslate"><span class="pre">var</span></code></p></li>
+</ul>
+</li>
+<li><p><strong>Bug fixes</strong> and <strong>performance improvements</strong> (elementwise and linear algebra functions)</p></li>
+</ul>
+</li>
+<li><p><strong>Data Parallel Extension for Numba*</strong> - <code class="docutils literal notranslate"><span class="pre">numba-dpex</span></code></p>
+<ul>
+<li><p><strong>Added support for Numba 0.59</strong>. Minimum required Numba version is 0.58</p></li>
+<li><p><strong>New features in kernel API</strong> that enable greater control of device execution:</p>
+<ul>
+<li><p><strong>Atomic Fetch Operations</strong>: <code class="docutils literal notranslate"><span class="pre">fetch_add</span></code>, <code class="docutils literal notranslate"><span class="pre">fetch_sub</span></code>, <code class="docutils literal notranslate"><span class="pre">fetch_min</span></code>, <code class="docutils literal notranslate"><span class="pre">fetch_max</span></code>, <code class="docutils literal notranslate"><span class="pre">fetch_and</span></code>, <code class="docutils literal notranslate"><span class="pre">fetch_or</span></code>, <code class="docutils literal notranslate"><span class="pre">fetch_xor</span></code>.</p></li>
+<li><p><strong>Atomic Load, Store, Exchange Operations</strong>: <code class="docutils literal notranslate"><span class="pre">atomic_load</span></code>, <code class="docutils literal notranslate"><span class="pre">atomic_store</span></code>, <code class="docutils literal notranslate"><span class="pre">atomic_exchange</span></code></p></li>
+<li><p><strong>Atomic Compare-Exchange Operation</strong>: <code class="docutils literal notranslate"><span class="pre">atomic_compare_exchange</span></code>.</p></li>
+<li><p><strong>New indexing classes</strong>, <code class="docutils literal notranslate"><span class="pre">Item</span></code> and <code class="docutils literal notranslate"><span class="pre">NdItem</span></code>, which allow to express different levels of parallelism. All indexing functions are supported with these new classes.</p>
+<ul>
+<li><p>NOTE: Old indexing functions have been deprecated!</p></li>
+</ul>
+</li>
+<li><p>Added <strong>support for <code class="docutils literal notranslate"><span class="pre">group_barrier</span></code> functions</strong>, fixing code generation issues in the existing barrier function.</p></li>
+</ul>
+</li>
+<li><p><strong>Performance</strong> and <strong>other enhancements:</strong></p>
+<ul>
+<li><p>Significantly <strong>improved kernel launch times.</strong></p></li>
+<li><p><strong>Kernel</strong> functions <strong>can now be submitted asynchronously</strong> to execution queues.</p></li>
+<li><p><strong>Kernel</strong> functions are now <strong>callable from inside dpjit</strong> functions.</p></li>
+</ul>
+</li>
+<li><p>Version updates of conda packages.</p></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</details>
+</section>
+<section id="id4">
+<h3>2024.0<a class="headerlink" href="#id4" title="Link to this heading"></a></h3>
+<details>
+  <summary><b>Expand</b></summary>
+<p><a class="reference external" href="https://cdrdv2.intel.com/v1/dl/getContent/792860">Release Notes</a></p>
+<p><strong>What’s New</strong>:</p>
+<p>The following are new features for the release:</p>
+<ul class="simple">
+<li><p>Installer is now based on Conda Constructor, which improves user installation experience by</p>
+<ul>
+<li><p>Faster conda package installation and error-handling</p></li>
+<li><p>Compatibility with .conda files</p></li>
+<li><p>Customizable install paths</p></li>
+<li><p>Command-line interface installation</p></li>
+</ul>
+</li>
+</ul>
+<p>Other changes in this release:
+- Performance improvements and other enhancements for Data Parallel Extensions for Python (dpctl, dpnp, numba-dpex)
+- macOS no longer supported for 2024.0</p>
+<p><strong>OS Deprecation Notice</strong></p>
+<p>The following OS support is now deprecated and will be discontinued with our 2025.0 release in Fall 2024.​​​​​​</p>
+<p>CPU
+- SUSE Linux Enterprise Server (SLES) version 15 SP3
+- Ubuntu Linux version 20.04</p>
+<p>GPU
+- Red Hat Enterprise Linux (RHEL) version 8.6
+- SUSE Linux Enterprise Server (SLES) version 15 SP3</p>
+ </details>
+</section>
+</section>
+<section id="known-issues">
+<h2>Known Issues<a class="headerlink" href="#known-issues" title="Link to this heading"></a></h2>
+<p>Please refer to the <strong>Known Issues</strong> in the <strong>Resources</strong> of the document that is available online:</p>
+<p>https://www.intel.com/content/www/us/en/developer/articles/troubleshooting/python-known-issues.html</p>
+<p><strong>Intel® Distribution for Python, version 2024.1</strong> does not include the latest functional and security
+updates. <strong>Intel® Distribution for Python, Version 2024.2</strong> is targeted to be released in <strong>June 2024</strong> and will
+include additional functional and security updates. Customers should update to the latest version as it
+becomes available.</p>
+</section>
+<section id="deprecation-notices">
+<h2>Deprecation Notices<a class="headerlink" href="#deprecation-notices" title="Link to this heading"></a></h2>
+<section id="deprecation-notice-for-python-3-8">
+<h3>Deprecation Notice for Python* 3.8<a class="headerlink" href="#deprecation-notice-for-python-3-8" title="Link to this heading"></a></h3>
+<p>Beginning with the Intel® Distribution for Python* 2024.0 release, Python version 3.8 will no longer be supported.</p>
+</section>
+<section id="deprecation-of-intel-distribution-for-python-for-macos">
+<h3>Deprecation of Intel® Distribution for Python* for macOS*<a class="headerlink" href="#deprecation-of-intel-distribution-for-python-for-macos" title="Link to this heading"></a></h3>
+<p>This is a forewarning: Intel® Distribution for Python for macOS is obsolete, use is discouraged, and it will be phased out starting with removal from our future product release in oneAPI 2024.0</p>
+<p>Starting with the Intel® oneAPI 2024.0, Intel will no longer package or release Intel® Distribution for Python for macOS.</p>
+</section>
+<section id="deprecation-of-intel-extension-for-scikit-learn-for-macos">
+<h3>Deprecation of Intel® Extension for Scikit-Learn* for macOS*<a class="headerlink" href="#deprecation-of-intel-extension-for-scikit-learn-for-macos" title="Link to this heading"></a></h3>
+<p>Intel® Extension for Scikit-Learn* on macOS is now deprecated and will be discontinued in the 2024.0 release. Support for Linux*, Windows* and Windows Server* is available.</p>
+</section>
+</section>
+</section>
+<section id="previous-releases">
+<h1>Previous Releases<a class="headerlink" href="#previous-releases" title="Link to this heading"></a></h1>
+<section id="id5">
+<h2>2023<a class="headerlink" href="#id5" title="Link to this heading"></a></h2>
+<section id="id6">
+<h3>2023.2<a class="headerlink" href="#id6" title="Link to this heading"></a></h3>
+<details>
+  <summary><b>Expand</b></summary>
+<p><a class="reference external" href="https://cdrdv2.intel.com/v1/dl/getContent/783108?explicitVersion=true">Release Notes</a></p>
+<p><strong>What’s New:</strong></p>
+<ul class="simple">
+<li><p>Migrated to conda-forge dependencies for greater compatibility with rich conda-forge packages</p></li>
+<li><p>Excluded mpi4py from IDP to provide flexibility for customers who want to use other MPI vendors in their Python environment</p></li>
+<li><p>Increased glibc minimum deployment target to 2.28 for GPU components to utilize newer glib functionality</p></li>
+<li><p>Updated data-parallel extensions for Python packages (numba-dpex, dpctl, dpnp)</p></li>
+</ul>
+<p><strong>Deprecation Notice:</strong>  Beginning with the Intel® Distribution for Python* 2024.0 release, Python version 3.8 will no longer be supported.</p>
+<p><em><em>Deprecation of Intel® Distribution for Python</em> for macOS*</em>*</p>
+<p>This is a forewarning: Intel® Distribution for Python for macOS is obsolete, use is discouraged, and it will be phased out starting with removal from our future product release in oneAPI 2024.0</p>
+<p>Starting with the Intel® oneAPI 2024.0, Intel will no longer package or release Intel® Distribution for Python for macOS.</p>
+<p><em><em>Deprecation of Intel® Extension for Scikit-Learn</em> for macOS*</em>*</p>
+<p>Intel® Extension for Scikit-Learn* on macOS is now deprecated and will be discontinued in the 2024.0 release. Support for Linux*, Windows* and Windows Server* is available.</p>
+</details> 
+</section>
+<section id="id7">
+<h3>2023.1<a class="headerlink" href="#id7" title="Link to this heading"></a></h3>
+<details>
+  <summary><b>Expand</b></summary>
+<p><a class="reference external" href="https://cdrdv2.intel.com/v1/dl/getContent/774139">Release Notes</a></p>
+<ul class="simple">
+<li><p>Updated conda to 22.11.1</p>
+<ul>
+<li><p>Downloads and extract packages in parallel, which greatly speeds up package downloads when latency is high (controlled by the new fetch_threads config parameter</p></li>
+<li><p>Removed pyeditline from distribution</p></li>
+</ul>
+</li>
+<li><p>Source of segmentation fault issues when using tab completion</p>
+<ul>
+<li><p>Caused interpreter to hang in Python 3.10 during SSH sessions</p></li>
+<li><p>Users can still run <code class="docutils literal notranslate"><span class="pre">conda</span> <span class="pre">install</span> <span class="pre">pyeditline</span> <span class="pre">-c</span> <span class="pre">intel</span> <span class="pre">--override-channels</span></code></p></li>
+</ul>
+</li>
+</ul>
+</details> 
+</section>
+<section id="id8">
+<h3>2023.0<a class="headerlink" href="#id8" title="Link to this heading"></a></h3>
+<details>
+  <summary><b>Expand</b></summary>
+<p><a class="reference external" href="https://cdrdv2.intel.com/v1/dl/getContent/763158">Release Notes</a></p>
+<ul class="simple">
+<li><p>Python 3.10 packages are available in online Intel channel</p></li>
+<li><p>Updated versions of packages (e.g. numpy, scipy, etc.)</p></li>
+<li><p>Numba-dpex has the following new features</p>
+<ul>
+<li><p>Supports newer Numba version (Numba0.56).</p></li>
+<li><p>Supports the latest release of dpnp (0.11) and dpctl (0.14).</p></li>
+<li><p>Adds customized exception classes for better exception handling.</p></li>
+</ul>
+</li>
+<li><p>Improves code stability when calling take() for input array with non-integer values.</p></li>
+<li><p>Allows pairwise_distance.py to run on machine with no FP64 support in HW.</p></li>
+<li><p>DPC++ RT is ABI incompatible with earlier version of DPC++ RT.</p>
+<ul>
+<li><p>Applications compiled with 2022 DPC++ compiler are incompatible with DPC++ RT 2023 Gold and must be recompiled, or used with DPC++ RT 2022</p></li>
+<li><p>Applications compiled with 2023 DPC++ compiler are not compatible with earlier versions of DPC++ RT.</p></li>
+</ul>
+</li>
+</ul>
+</details> 
+</section>
+</section>
+<section id="id9">
+<h2>2022<a class="headerlink" href="#id9" title="Link to this heading"></a></h2>
+<section id="intel-oneapi-2022-3-1">
+<h3>Intel® oneAPI 2022.3.1<a class="headerlink" href="#intel-oneapi-2022-3-1" title="Link to this heading"></a></h3>
+<details>
+  <summary><b>Expand</b></summary>
+<p><a class="reference external" href="https://cdrdv2.intel.com/v1/dl/getContent/751943">Release Notes</a></p>
+<ul class="simple">
+<li><p>Take advantage of new performance optimizations of element-wise operations and Windows OS support in the Dpnp package</p></li>
+<li><p>Gain explicit control of device memory allocation and kernel execution with the Dpnp and numba-dppy packages</p></li>
+<li><p>This release is immediately available through the Intel® Developer Zone. It will be available through repositories at a later date.</p></li>
+</ul>
+</details> 
+</section>
+<section id="intel-oneapi-2022-3">
+<h3>Intel® oneAPI 2022.3<a class="headerlink" href="#intel-oneapi-2022-3" title="Link to this heading"></a></h3>
+<details>
+  <summary><b>Expand</b></summary>
+<p><a class="reference external" href="https://cdrdv2.intel.com/v1/dl/getContent/741452">Release Notes</a></p>
+<ul class="simple">
+<li><p>Addressed critical CVE -2018-25032</p></li>
+</ul>
+<p>Please note:</p>
+<p>As announced previously, Windows driver support of integrated graphics processors included with 6th - 10th Gen Intel Core Processor and related Intel Atom®, Pentium®, and Celeron® processors is deprecated and has moved to maintenance mode. Only security and critical bug fixes will be updated.</p>
+<p>oneAPI tools using existing integrated graphics processor functionality in the aforementioned processors may continue to work, but will no longer be supported. Note that CPU functionality for these processors remains fully supported and unaffected.</p>
+<p>Intel® oneAPI 2022.3 is validated on Windows and Linux.</p>
+<ul class="simple">
+<li><p>Windows Intel® Graphics Driver, see this article for instructions to download and install.</p></li>
+<li><p>Linux General Purpose Intel GPUs (GPGPU) Driver, see this article. Click the one labeled 20220830 for instructions to download and install.​​​​</p></li>
+</ul>
+</details> 
+</section>
+<section id="intel-oneapi-2022-2">
+<h3>Intel® oneAPI 2022.2<a class="headerlink" href="#intel-oneapi-2022-2" title="Link to this heading"></a></h3>
+<details>
+  <summary><b>Expand</b></summary>
+<p><a class="reference external" href="https://software.intel.com/content/dam/develop/external/us/en/documents/2022.2_Python_Release_Notes_Intel(R)_Distribution_for_Python.pdf">Release Notes</a></p>
+<ul class="simple">
+<li><p>Updated packages to latest versions with CVE fixes</p></li>
+<li><p>dpnp updates</p>
+<ul>
+<li><p>Implemented the “compute follows data” programming model for the dpnp library</p></li>
+<li><p>dpnp package on Windows become available</p></li>
+<li><p>performance improvement of element-wise functions in dpnp in case of input data with strides</p></li>
+</ul>
+</li>
+<li><p>numba-dppy updates</p>
+<ul>
+<li><p>Implemented the “compute follows data” programming model for the kernel API in numba-dppy</p></li>
+<li><p>Device private memory support in numba-dppy</p></li>
+<li><p>numba-dppy support for any array that supports the <code class="docutils literal notranslate"><span class="pre">__sycl_usm_array_interface__</span></code> protocol for the kernel API</p></li>
+<li><p>Provided support for Numba 0.55 and new debugging features in numba-dppy</p></li>
+<li><p>Enable DPNP support in numba-dppy on Windows</p></li>
+</ul>
+</li>
+</ul>
+</details> 
+</section>
+<section id="intel-oneapi-2022-1">
+<h3>Intel® oneAPI 2022.1<a class="headerlink" href="#intel-oneapi-2022-1" title="Link to this heading"></a></h3>
+<details>
+  <summary><b>Expand</b></summary>
+<p><a class="reference external" href="https://software.intel.com/content/dam/develop/external/us/en/documents/2022_Python_Release_Notes_Intel(R)_Distribution_for_Python-Release1.pdf">Release Notes</a></p>
+<ul class="simple">
+<li><p>Intel® Distribution for Python now supports Python version 3.9</p></li>
+<li><p>The dpctl package offers developers increased debugging capabilities with improved error handing and reporting</p></li>
+<li><p>Data Parallel Python technology now provides zero copy data exchange performance across packages</p></li>
+</ul>
+<p><strong>New in 2022.1.2 Product Release for Windows* only:</strong></p>
+<ul class="simple">
+<li><p>Fixes Intel® Distribution for Python installation issue</p></li>
+</ul>
+</details> 
+</section>
+</section>
+<section id="id10">
+<h2>2021<a class="headerlink" href="#id10" title="Link to this heading"></a></h2>
+<section id="intel-oneapi-2021-4">
+<h3>Intel® oneAPI 2021.4<a class="headerlink" href="#intel-oneapi-2021-4" title="Link to this heading"></a></h3>
+<details>
+  <summary><b>Expand</b></summary>
+<p><a class="reference external" href="https://software.intel.com/content/dam/develop/external/us/en/documents/2021_Python_Release_Notes_Intel(R)_Distribution_for_Python_Release4.pdf">Release Notes</a></p>
+<ul class="simple">
+<li><p>Numba-dppy works as an extension to off-the-shelf Numba 0.54.0.</p></li>
+<li><p>Pandas.MultiIndex support added in SDC.</p></li>
+<li><p>Numba-dppy’s &#64;dppy.kernel now support __sycl_usm_array_interface through dpctl’s usm_ndarray.</p></li>
+<li><p>Updated all LLVM packages to LLVM 11</p></li>
+<li><p>Enabled &#64;vectorize for target dppy in Numba-dppy</p></li>
+<li><p>Dpctl now has the ability to get command status and get profiling information from events.</p></li>
+<li><p>Dpctl has added queue.submit_barrier method to provide advanced synchronization mechanism to users.</p></li>
+<li><p>Expanded the Python C-API for working with dpctl Python objects in native extensions written in C/C++, example added for Pybind11.</p></li>
+<li><p>Implemented multi-versioning of DPCTLSyclInterface library on Linux.</p></li>
+<li><p>Dpctl can now be built using Open Source LLVM Sycl compiler.</p></li>
+</ul>
+</details> 
+</section>
+<section id="intel-oneapi-2021-3">
+<h3>Intel® oneAPI 2021.3<a class="headerlink" href="#intel-oneapi-2021-3" title="Link to this heading"></a></h3>
+<details>
+  <summary><b>Expand</b></summary>
+<p><a class="reference external" href="https://software.intel.com/content/dam/develop/external/us/en/documents/2021_Python_Release_Notes_Intel(R)_Distribution_for_Python-Release3.pdf">Release Notes</a></p>
+<ul class="simple">
+<li><p>Providing initial DPC++ compiler conda packages</p></li>
+<li><p>SDC with extended Pandas API support and reduced compilation time</p></li>
+<li><p>Numba-dppy improvements to documentation, code quality, Python 3.8 support, profiling support</p></li>
+<li><p>dpctl improvements to API usability, filter selector support, explicit SYCL context and queue creation, and Level Zero program creation support for Windows</p></li>
+</ul>
+</details> 
+</section>
+<section id="intel-oneapi-2021-2">
+<h3>Intel® oneAPI 2021.2<a class="headerlink" href="#intel-oneapi-2021-2" title="Link to this heading"></a></h3>
+<details>
+  <summary><b>Expand</b></summary>
+<p><a class="reference external" href="https://software.intel.com/content/dam/develop/external/us/en/documents/2021_Python_Release_Notes_Intel(R)_Distribution_for_Python-Release2.pdf">Release Notes</a></p>
+<ul class="simple">
+<li><p>Support for Level Zero driver to Numba-dppy</p></li>
+<li><p>Support SYCL filter selector in queue manager</p></li>
+<li><p>Better support for <strong>sycl_usm_array_interface</strong> in numba-dppy</p></li>
+<li><p>Improvements to GDB support in Numba-DPPY generated kernels</p></li>
+<li><p>numpy package is updated to v1.20.1</p></li>
+<li><p>Improved performance of the following Intel scikit-learn CPU algorithms: Random forest, PCA, SVM</p></li>
+<li><p>Introduced bit-to-bit results reproducibility for Scikit-learn patches on CPU</p></li>
+<li><p>First public XGBoost version with GPU support</p></li>
+<li><p>Bug-fixes, improvements to documentations, user guides and examples</p></li>
+</ul>
+</details> 
+</section>
+<section id="intel-oneapi-2021-1">
+<h3>Intel® oneAPI 2021.1<a class="headerlink" href="#intel-oneapi-2021-1" title="Link to this heading"></a></h3>
+<details>
+  <summary><b>Expand</b></summary>
+<p><a class="reference external" href="https://software.intel.com/content/dam/develop/external/us/en/documents/2021_Python_Release_Notes_Intel(R)_Distribution_for_Python-Update_1.pdf">Release Notes</a></p>
+<ul class="simple">
+<li><p>Machine Learning</p>
+<ul>
+<li><p>New accelerated Scikit-learn functionality: Random Forest Classification/Regression, kNN Search/Classification/Regression, tSNE, SVC, LASSO, ElasticNet, train_test_split, assert_all_finite, sparse K-means.</p></li>
+<li><p>Scikit-learn and daal4py additional optimizations for DBSCAN, SVM, ElasticNet/LASSO, K-Means, train_test_split, Support Vector Classification (SVC), Random Forest, Logistic Regression, F-contiguous inputs.</p></li>
+<li><p>Conversion of trained XGBoost and LightGBM models into daal4py Gradient Boosted Trees model for fast prediction.</p></li>
+<li><p>XGBoost 1.2 with additional CPU optimizations with ‘hist’-tree method.</p></li>
+</ul>
+</li>
+<li><p>Initial GPU support</p>
+<ul>
+<li><p>dpnp – GPU-enabled Data Parallel NumPy, a collection of many NumPy algorithms accelerated for GPUs</p></li>
+<li><p>dpctl – new Python package for device, queue, and USM data management with initial support in dpnp, scikit-learn, daal4py, and numba</p></li>
+<li><p>daal4py optimizations for GPU: KNN Classification, batch and streaming Covariance, DBSCAN, GBT Regression, K-Means, Linear &amp; Logistic Regression, batch and streaming Low Order Moments, PCA, and binary SVM Classification</p></li>
+<li><p>GPU support in scikit-learn for DBSCAN, K-Means, Linear Regression and Logistic Regression algorithms</p></li>
+<li><p>numba – initial support for automatic GPU offload and GPU kernel semantics</p></li>
+</ul>
+</li>
+<li><p>Numerical computing and image processing</p>
+<ul>
+<li><p>New mkl_sparse package for Intel® MKL-powered sparse matrix computations in NumPy.</p></li>
+<li><p>New mkl_umath package for acceleration of NumPy universal functions.</p></li>
+</ul>
+</li>
+<li><p>Releasing scikit-ipp 1.2.0 for Intel® IPP-accelerated image warping , image filtering, and morphological operations</p></li>
+<li><p>Intel® Scalable Dataframe Compiler (Intel® SDC) Beta – Numba extension for accelerating Pandas*</p></li>
+</ul>
+</details> 
+</section>
+</section>
+<section id="id11">
+<h2>2020<a class="headerlink" href="#id11" title="Link to this heading"></a></h2>
+<section id="update-4">
+<h3>Update 4<a class="headerlink" href="#update-4" title="Link to this heading"></a></h3>
+<details>
+  <summary><b>Expand</b></summary>
+<p><a class="reference external" href="https://software.intel.com/content/dam/develop/external/us/en/documents/2020_Python_Release%20Notes%20Intel(R)%20Distribution%20for%20Python%20-%20Update%204.pdf">Release Notes</a></p>
+<ul class="simple">
+<li><p>Releasing scikit-ipp 1.2.0 for image warping, image filtering and morphological operations with scikit-image like API. Support for multi-threading for transform functions and partial multi-threading for filters using OpenMP.</p></li>
+<li><p>Releasing mkl_umath Python package for Intel® technologies-powered NumPy universal function.</p></li>
+<li><p>Added new features for accelerated KNeighborsClassifier, RandomForestClassifier and RandomForestRegressor estimators, Sparse input support for KMeans and SVC, Probabilities prediction for SVC, Support of ‘normalize’ parameter for Lasso and ElasticNet in scikit-learn.</p></li>
+<li><p>Optimizations of train_test_split and Support Vector Classification (SVC) fit and prediction in scikit-learn.</p></li>
+<li><p>Conversion of trained XGBoost* and LightGBM* models into daal4py Gradient Boosted Trees model for fast prediction.</p></li>
+<li><p>Added new features for Brute Force method for k-Nearest Neighbors classification, new parameters support for k-Nearest Neighbors and Decision Forest in daal4py.</p></li>
+<li><p>Optimizations of Support Vector Machine training and prediction, Decision Forest classification training in daal4py.</p></li>
+<li><p>Latest CVE patches have been applied.</p></li>
+</ul>
+</details> 
+</section>
+<section id="update-2">
+<h3>Update 2<a class="headerlink" href="#update-2" title="Link to this heading"></a></h3>
+<details>
+  <summary><b>Expand</b></summary>
+<p><a class="reference external" href="https://software.intel.com/content/dam/develop/external/us/en/documents/2020_Python_Release%20Notes%20Intel(R)%20Distribution%20for%20Python%20-%20Update%202.pdf">Release Notes</a></p>
+<ul class="simple">
+<li><p>Implemented Scikit-Learn compatible Gradient Boosted Tree classifier, Decision Tree Classifier and tree-based Adaboost classifier in daal4py.</p></li>
+<li><p>Implemented computation of prediction probabilities in Scikit-Learn compatible RandomForest and Gradient Boosted Trees classifiers in daal4py.</p></li>
+<li><p>numpy package is updated to v1.18.5</p></li>
+<li><p>Scikit-learn package is updated to v 0.23.1</p></li>
+<li><p>Support of thunder SVM method for IDP sklearn in daal4py</p></li>
+<li><p>Performance optimizations for SVC fit and prediction, Elastic Net and LASSO fit, K-Means fit and prediction, PCA fit and transform, train_test_split</p></li>
+</ul>
+</details> 
+</section>
+<section id="update-1">
+<h3>Update 1<a class="headerlink" href="#update-1" title="Link to this heading"></a></h3>
+<details>
+  <summary><b>Expand</b></summary>
+<p><a class="reference external" href="https://software.intel.com/sites/default/files/managed/e6/93/2020_Python_Release%20Notes%20Intel%28R%29%20Distribution%20for%20Python%20-%20Update%201.pdf">Release Notes</a></p>
+<ul class="simple">
+<li><p>DBSCAN is accelerated in sklearn.</p></li>
+<li><p>Performance improvement for F-contiguous inputs in daal4py.</p></li>
+<li><p>Patches updated for compatibility with sklearn 0.22.</p></li>
+</ul>
+</details> 
+</section>
+<section id="gold">
+<h3>2020 Gold<a class="headerlink" href="#gold" title="Link to this heading"></a></h3>
+<details>
+  <summary><b>Expand</b></summary>
+<p><a class="reference external" href="https://software.intel.com/sites/default/files/managed/19/ed/2020-python-release-notes-intel-distribution-for-python-gold.pdf">Release Notes</a></p>
+<ul class="simple">
+<li><p>Update to conda 4.7.12.</p></li>
+<li><p>Added support for Brownboost, Logistboost as well as Stump regression and Stump classification algorithms to daal4py.</p></li>
+<li><p>Added support for Adaboost classification algorithm, including support for method=”SAMME” or “SAMMER” for multi-class data in daal4py.</p></li>
+<li><p>“Variable Importance” feature has been added to Gradient Boosting Trees in daal4py.</p></li>
+<li><p>Ability to compute class prediction probabilities has been added to appropriate classifiers, including logistic regression, tree-based classifiers, etc., in daal4py.</p></li>
+</ul>
+</details> 
+</section>
+</section>
+<section id="id12">
+<h2>2019<a class="headerlink" href="#id12" title="Link to this heading"></a></h2>
+<section id="update-5">
+<h3>Update 5<a class="headerlink" href="#update-5" title="Link to this heading"></a></h3>
+<details>
+  <summary><b>Expand</b></summary>
+<p><a class="reference external" href="https://software.intel.com/sites/default/files/managed/69/73/2019_Python_Release%20Notes%20Intel%28R%29%20Distribution%20for%20Python%20-%20Update%205.pdf">Release Notes</a></p>
+<ul class="simple">
+<li><p>Single node support for DBSCAN, LASSO, Coordinate Descent (CD) solver algorithms through daal4py package</p></li>
+<li><p>Distributed model support for SVD, QR, K-means init++ and parallel++ algorithms through daal4py package</p></li>
+<li><p>Additional Scikit-Learn algorithms optimized using Intel® DAAL: Linear, Ridge, Logistic, PCA, KMeans, pairwise_distances and SVC</p></li>
+</ul>
+</details> 
+</section>
+<section id="id13">
+<h3>Update 4<a class="headerlink" href="#id13" title="Link to this heading"></a></h3>
+<details>
+  <summary><b>Expand</b></summary>
+<p><a class="reference external" href="https://software.intel.com/sites/default/files/managed/4e/ac/2019_Python_Release%20Notes%20Intel%28R%29%20Distribution%20for%20Python%20-%20Update%204.pdf">Release Notes</a></p>
+<ul class="simple">
+<li><p>New distributed model support for “Moments of low order” and “Covariance” algorithms through daal4py package</p></li>
+<li><p>Updated python package versions and their supported platforms</p></li>
+</ul>
+</details> 
+</section>
+<section id="update-3">
+<h3>Update 3<a class="headerlink" href="#update-3" title="Link to this heading"></a></h3>
+<details>
+  <summary><b>Expand</b></summary>
+<p><a class="reference external" href="https://software.intel.com/sites/default/files/managed/f6/12/2019_Python_Release%20Notes%20Intel%28R%29%20Distribution%20for%20Python%20-%20Update%203.pdf">Release Notes</a></p>
+<ul class="simple">
+<li><p>Extended availability of Intel® DAAL algorithms through daal4py package.</p></li>
+<li><p>Daal4py distributed mode support for scale-out to clusters &amp; support for streaming mode for efficient memory handling.</p></li>
+<li><p>Updated python packages and their supported platforms.</p></li>
+</ul>
+</details> 
+</section>
+<section id="id14">
+<h3>Update 2<a class="headerlink" href="#id14" title="Link to this heading"></a></h3>
+<details>
+  <summary><b>Expand</b></summary>
+<p><a class="reference external" href="https://software.intel.com/sites/default/files/managed/8f/c9/2019_Python_Release%20Notes%20Intel%28R%29%20Distribution%20for%20Python%20-%20Update%202.pdf">Release Notes</a></p>
+<ul class="simple">
+<li><p>Intel® Distribution for Python 2019 Update 2 includes functional and security updates. Users should update to the latest version.</p></li>
+</ul>
+</details> 
+</section>
+<section id="id15">
+<h3>Update 1<a class="headerlink" href="#id15" title="Link to this heading"></a></h3>
+<details>
+  <summary><b>Expand</b></summary>
+<p><a class="reference external" href="https://software.intel.com/sites/default/files/managed/3b/7c/2019_Python_Release%20Notes%20Intel%28R%29%20Distribution%20for%20Python%20-%20Update%201.pdf">Release Notes</a></p>
+<ul class="simple">
+<li><p>Scikit-learn optimizations for Logistic Regression, Random Forest Regressor &amp; Classifier.</p></li>
+<li><p>New machine learning package (daal4py) with an easy to use API and performance accelerated by Intel® DAAL.</p></li>
+<li><p>Introducing Numba* threading layer abstraction that allows to switch between Intel® TBB (default) and OpenMP* threading layer.</p></li>
+<li><p>Access to MKL runtime settings available through easy-to-use Python control package (mkl-service)</p></li>
+</ul>
+</details> 
+</section>
+<section id="initial-release">
+<h3>Initial Release<a class="headerlink" href="#initial-release" title="Link to this heading"></a></h3>
+<details>
+  <summary><b>Expand</b></summary>
+<p><a class="reference external" href="https://software.intel.com/sites/default/files/managed/d9/bc/2019_Python_Release%20Notes%20Intel%28R%29%20Distribution%20for%20Python%20-%20Gold.pdf">Release Notes</a></p>
+<ul class="simple">
+<li><p>Intel® Distribution for Python now integrated into Intel® Parallel Studio XE 2019 installer. Also available as easy command line standalone install.</p></li>
+<li><p>Faster Machine learning with Scikit-learn: Support Vector Machine (SVM) and K-means prediction, accelerated with Intel® DAAL.</p></li>
+<li><p>XGBoost package included in Intel® Distribution for Python (Linux only).</p></li>
+<li><p>Note: The deep learning packages and computer vision packages along with their dependencies will not be included in Intel Distribution for Python, henceforth. However, the packages continue to be available in anaconda/Intel conda channel. Click on the <a class="reference external" href="https://www.intel.com/content/www/us/en/developer/articles/tool/whats-included-distribution-for-python.html">What’s Included in the Intel® Distribution for Python*</a> to learn more.</p></li>
+</ul>
+</details> 
+<section id="notices-and-disclaimers">
+<h4>Notices and Disclaimers<a class="headerlink" href="#notices-and-disclaimers" title="Link to this heading"></a></h4>
+<p>Intel technologies may require enabled hardware, software or service activation.</p>
+<p>No product or component can be absolutely secure.</p>
+<p>Your costs and results may vary.</p>
+<p>© Intel Corporation. Intel, the Intel logo, and other Intel marks are trademarks of Intel Corporation or its subsidiaries. Other names and brands may be claimed as the property of others.</p>
+<p>No license (express or implied, by estoppel or otherwise) to any intellectual property rights is granted by this document.</p>
+<p>The products described may contain design defects or errors known as errata which may cause the product to deviate from published specifications. Current characterized errata are available on request.</p>
+<p>Intel disclaims all express and implied warranties, including without limitation, the implied warranties of merchantability, fitness for a particular purpose, and non-infringement, as well as any warranty arising from course of performance, course of dealing, or usage in trade.</p>
+</section>
+</section>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="performance.html" class="btn btn-neutral float-left" title="Performance" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="dpep.html" class="btn btn-neutral float-right" title="Data Parallel Extensions for Python*" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2024, Intel(R).</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>
