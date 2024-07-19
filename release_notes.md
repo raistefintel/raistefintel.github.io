@@ -7,17 +7,6 @@ All files are in PDF format - [Adobe Reader\*](https://get.adobe.com/reader/) (o
 For information on known issues, see [Intel® Distribution for Python\* Known Issues.](https://www.intel.com/content/www/us/en/developer/articles/troubleshooting/python-known-issues.html)
 For questions or technical support, visit [Intel® Distribution for Python\* Support Forum.](https://community.intel.com/t5/Intel-Distribution-for-Python/bd-p/distribution-python)
 
-#### Navigation
-- [2024](#2024)
-	- [Known Issues](#known-issues)
-	- [Deprecation Notices](#deprecation-notices)
- - [Previous releases](#previous-releases)
-	- [2023](#2023)
-	- [2022](#2022)
-	- [2021](#2021)
-	- [2020](#2020)
-	- [2019](#2019)
-
 ## 2024 
 ### 2024.2
 <details open> 
@@ -164,10 +153,10 @@ Starting with the Intel® oneAPI 2024.0, Intel will no longer package or release
 
 Intel® Extension for Scikit-Learn* on macOS is now deprecated and will be discontinued in the 2024.0 release. Support for Linux*, Windows* and Windows Server* is available.
 
-# Previous Releases 
+## Previous Releases 
 
-## 2023 
-### 2023.2
+### 2023 
+#### 2023.2
 <details>
   <summary><b>Expand</b></summary>
 
@@ -193,7 +182,7 @@ Starting with the Intel® oneAPI 2024.0, Intel will no longer package or release
 Intel® Extension for Scikit-Learn\* on macOS is now deprecated and will be discontinued in the 2024.0 release. Support for Linux*, Windows* and Windows Server* is available.
 </details> 
 
-### 2023.1
+#### 2023.1
 <details>
   <summary><b>Expand</b></summary>
 
@@ -207,7 +196,7 @@ Intel® Extension for Scikit-Learn\* on macOS is now deprecated and will be disc
 	- Users can still run `conda install pyeditline -c intel --override-channels`
 </details> 
 
-### 2023.0
+#### 2023.0
 <details>
   <summary><b>Expand</b></summary>
 
@@ -226,8 +215,8 @@ Intel® Extension for Scikit-Learn\* on macOS is now deprecated and will be disc
 	- Applications compiled with 2023 DPC++ compiler are not compatible with earlier versions of DPC++ RT.
 </details> 
 
-## 2022 
-### Intel® oneAPI 2022.3.1
+### 2022 
+#### Intel® oneAPI 2022.3.1
 <details>
   <summary><b>Expand</b></summary>
 
@@ -238,7 +227,7 @@ Intel® Extension for Scikit-Learn\* on macOS is now deprecated and will be disc
 - This release is immediately available through the Intel® Developer Zone. It will be available through repositories at a later date.
 </details> 
 
-### Intel® oneAPI 2022.3
+#### Intel® oneAPI 2022.3
 <details>
   <summary><b>Expand</b></summary>
 
@@ -257,7 +246,7 @@ Intel® oneAPI 2022.3 is validated on Windows and Linux.
 - Linux General Purpose Intel GPUs (GPGPU) Driver, see this article. Click the one labeled 20220830 for instructions to download and install.​​​​
 </details> 
 
-### Intel® oneAPI 2022.2
+#### Intel® oneAPI 2022.2
 <details>
   <summary><b>Expand</b></summary>
 
@@ -276,7 +265,7 @@ Intel® oneAPI 2022.3 is validated on Windows and Linux.
 	- Enable DPNP support in numba-dppy on Windows
 </details> 
 
-### Intel® oneAPI 2022.1 
+#### Intel® oneAPI 2022.1 
 <details>
   <summary><b>Expand</b></summary>
 
@@ -290,8 +279,8 @@ Intel® oneAPI 2022.3 is validated on Windows and Linux.
 - Fixes Intel® Distribution for Python installation issue
 </details> 
 
-## 2021
-### Intel® oneAPI 2021.4
+### 2021
+#### Intel® oneAPI 2021.4
 <details>
   <summary><b>Expand</b></summary>
 
@@ -309,7 +298,7 @@ Intel® oneAPI 2022.3 is validated on Windows and Linux.
 - Dpctl can now be built using Open Source LLVM Sycl compiler.
 </details> 
 
-### Intel® oneAPI 2021.3
+#### Intel® oneAPI 2021.3
 <details>
   <summary><b>Expand</b></summary>
 	
@@ -321,7 +310,7 @@ Intel® oneAPI 2022.3 is validated on Windows and Linux.
 - dpctl improvements to API usability, filter selector support, explicit SYCL context and queue creation, and Level Zero program creation support for Windows
 </details> 
  
-### Intel® oneAPI 2021.2
+#### Intel® oneAPI 2021.2
 <details>
   <summary><b>Expand</b></summary>
 
@@ -338,7 +327,7 @@ Intel® oneAPI 2022.3 is validated on Windows and Linux.
 - Bug-fixes, improvements to documentations, user guides and examples
 </details> 
 
-### Intel® oneAPI 2021.1
+#### Intel® oneAPI 2021.1
 <details>
   <summary><b>Expand</b></summary>
 
@@ -362,8 +351,8 @@ Intel® oneAPI 2022.3 is validated on Windows and Linux.
 - Intel® Scalable Dataframe Compiler (Intel® SDC) Beta – Numba extension for accelerating Pandas* 
 </details> 
 
-## 2020
-### Update 4
+### 2020
+#### Update 4
 <details>
   <summary><b>Expand</b></summary>
 
@@ -379,7 +368,7 @@ Intel® oneAPI 2022.3 is validated on Windows and Linux.
 - Latest CVE patches have been applied.
 </details> 
 
-### Update 2
+#### Update 2
 <details>
   <summary><b>Expand</b></summary>
 
@@ -393,7 +382,7 @@ Intel® oneAPI 2022.3 is validated on Windows and Linux.
 - Performance optimizations for SVC fit and prediction, Elastic Net and LASSO fit, K-Means fit and prediction, PCA fit and transform, train_test_split
 </details> 
 
-### Update 1
+#### Update 1
 <details>
   <summary><b>Expand</b></summary>
 
@@ -404,7 +393,7 @@ Intel® oneAPI 2022.3 is validated on Windows and Linux.
 - Patches updated for compatibility with sklearn 0.22.
 </details> 
 
-### 2020 Gold
+#### 2020 Gold
 <details>
   <summary><b>Expand</b></summary>
 
@@ -417,8 +406,8 @@ Intel® oneAPI 2022.3 is validated on Windows and Linux.
 - Ability to compute class prediction probabilities has been added to appropriate classifiers, including logistic regression, tree-based classifiers, etc., in daal4py.
 </details> 
 
-## 2019
-### Update 5
+### 2019
+#### Update 5
 <details>
   <summary><b>Expand</b></summary>
 
@@ -429,7 +418,7 @@ Intel® oneAPI 2022.3 is validated on Windows and Linux.
 - Additional Scikit-Learn algorithms optimized using Intel® DAAL: Linear, Ridge, Logistic, PCA, KMeans, pairwise_distances and SVC
 </details> 
 
-### Update 4
+#### Update 4
 <details>
   <summary><b>Expand</b></summary>
 
@@ -439,7 +428,7 @@ Intel® oneAPI 2022.3 is validated on Windows and Linux.
 - Updated python package versions and their supported platforms
 </details> 
 
-### Update 3
+#### Update 3
 <details>
   <summary><b>Expand</b></summary>
 
@@ -450,7 +439,7 @@ Intel® oneAPI 2022.3 is validated on Windows and Linux.
 - Updated python packages and their supported platforms.
 </details> 
 
-### Update 2
+#### Update 2
 <details>
   <summary><b>Expand</b></summary>
 	
@@ -459,7 +448,7 @@ Intel® oneAPI 2022.3 is validated on Windows and Linux.
 - Intel® Distribution for Python 2019 Update 2 includes functional and security updates. Users should update to the latest version.
 </details> 
 
-### Update 1
+#### Update 1
 <details>
   <summary><b>Expand</b></summary>
 
@@ -471,7 +460,7 @@ Intel® oneAPI 2022.3 is validated on Windows and Linux.
 - Access to MKL runtime settings available through easy-to-use Python control package (mkl-service)
 </details> 
 
-### Initial Release
+#### Initial Release
 <details>
   <summary><b>Expand</b></summary>
 	
